@@ -157,7 +157,7 @@
         </div>
     </div>
     <div id="wrapper">
-        <%@include file="header1.jsp" %>
+        <%@include file="header2.jsp" %>
         
          <!--/. NAV TOP  -->
        <nav class="navbar-default navbar-side" role="navigation">
@@ -165,20 +165,23 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a class="active-menu" href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a class="active-menu" href="HRdeshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-                   
                     <li>
-                        <a href="#"><i class="fa fa-pencil"></i> Manage Employee</a>
+                        <a href="manage_HR2.jsp"><i class="fa fa-pencil"></i> Manage HR</a>
+                         
+                    </li> 
+                    <li>
+                        <a href="manage_employee2.jsp"><i class="fa fa-edit"></i> Manage Employee</a>
                          
                     </li> 
 			
                       <li>
-                        <a href="#"><i class="fa fa-edit"></i> Live Activity Table </a>
+                        <a href="live_activity_table2.jsp"><i class="fa fa-table"></i> Live Activity Table </a>
                            
                     </li> 		 
 		<li>
-                        <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Reports </a>
+                        <a href="reports2.jsp"><i class="glyphicon glyphicon-list-alt"></i> Reports </a>
                            
                     </li> 	
                    
