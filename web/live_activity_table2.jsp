@@ -30,12 +30,58 @@
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-  
+     <script>
+var request=new XMLHttpRequest();
+function searchInfo(){
+    var name=document.vinform.name.value;
+    var url="indexSearch.jsp?val="+name;
+    
+
+    try
+    {
+        request.onreadystatechange=function()
+        {
+            if(request.readyState==4)
+            {
+                var val=request.responseText;
+                document.getElementById('mylocation').innerHTML=val;
+            }
+        }
+        request.open("GET",url,true);
+        request.send();
+    }catch(e)
+    {
+        alert("Unable to connect to server");
+    }
+}
+
+function searchInfo1(){
+    var name=document.vinform.name.value;
+    var url="ExportData?val="+name;
+
+    try
+    {
+        request.onreadystatechange=function()
+        {
+            if(request.readyState==4)
+            {
+                var val=request.responseText;
+                document.getElementById('mylocation').innerHTML=val;
+            }
+        }
+        request.open("GET",url,true);
+        request.send();
+    }catch(e)
+    {
+        alert("Unable to connect to server");
+    }
+}
+</script>
 </head>
     
  
 
-<body>
+<body onpageshow="searchInfo()">
        <!--progress-->
     <link href="css/style_1.css" rel="stylesheet">
     <script src="js/common.min.js"></script>
@@ -82,64 +128,49 @@
                 
         </nav>
        
-           
-        
-      
-		<div id="page-wrapper">
-		  <div class="header"> 
-                        <h1 class="page-header">
-                            Dashboard <small>Welcome  </small>
-                        </h1>
-						<ol class="breadcrumb">
-					  <li><a href="#">Home</a></li>
-					  <li><a href="#">Dashboard</a></li>
-					  <li class="active">Data</li>
-					</ol> 
-									
-		</div>
-            <div id="page-inner">
+ <div id="page-wrapper">
+		 
+            <div id="page-inner"> 
+				 
+			<h3>Search Employee</h3>
+                        <br>
+                            <form name="vinform" class="form-inline"  >
+                            
+                         <div class="form-group" >
+                            <input class="form-control" type="date" name="name" id="name" onfocusin="searchInfo()"/>
+                            &emsp;&emsp;&emsp;
+                            
+                            &emsp;&emsp;&emsp;
+                            <input class="login100-form-btn" type="button" name="Import" value="Import">
+                            &emsp;&emsp;
+                            <input class="login100-form-btn" type="button" name="Export" value="Export" onclick="searchInfo1()">
+                        </div>
+                        </form>
+                           
+                       
+                        <span id="mylocation"></span>	
 
+                        
+       
                 <!-- /. ROW  -->
-	
-               
-                
-              
-                      
-               
-		
-                <%@include file="footer.jsp" %>
+				 <%@include file="footer.jsp" %>
+				</div>
+             <!-- /. PAGE INNER  -->
             </div>
-            <!-- /. PAGE INNER  -->
+         <!-- /. PAGE WRAPPER  -->
         </div>
-        <!-- /. PAGE WRAPPER  -->
-    </div>
-    <!-- /. WRAPPER  -->
-    <!-- JS Scripts-->
-    <!-- jQuery Js -->
+  
     <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- Bootstrap Js -->
+      <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
-	 
     <!-- Metis Menu Js -->
     <script src="assets/js/jquery.metisMenu.js"></script>
-    <!-- Morris Chart Js -->
-    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
-    <script src="assets/js/morris/morris.js"></script>
-	
-	
-	<script src="assets/js/easypiechart.js"></script>
-	<script src="assets/js/easypiechart-data.js"></script>
-	
-	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
-	
-    <!-- Custom Js -->
+      <!-- Custom Js -->
     <script src="assets/js/custom-scripts.js"></script>
-
-     
-    <!-- Chart Js -->
-    <script type="text/javascript" src="assets/js/Chart.min.js"></script>  
-    <script type="text/javascript" src="assets/js/chartjs.js"></script> 
-   
+    
  
+ 
+
+
 </body>
 </html>
