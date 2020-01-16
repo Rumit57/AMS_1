@@ -76,45 +76,31 @@
                         <a class="active-menu" href="reports2.jsp"><i class="glyphicon glyphicon-list-alt"></i> Reports </a>
                            
                     </li> 	
-                   
-                  
-                       
-
-                
+     
         </nav>
-          
-        
-      
+ 
 		<div id="page-wrapper">
 		  <div class="header"> 
-                        		
-		</div>
-            <div id="page-inner">
+                      
+                  </div>
+                         <div id="page-inner">
 
-                <!-- /. ROW  -->
-                
-                <center>
+               
                     <div class="dropdown">
     
-     <h3 class="card-title">Reports</h3>
+     <h3 >Reports</h3>
      <br>
-         <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 30%">
-    <option>Small</option>
-    <option>Medium</option>
-    <option>Large</option>
-</select> 
+            <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 30%">
+             <option id="1">Small</option>
+             <option id="2">Medium</option>
+             <option id="3">Large</option>
+            </select> 
   
-  </div>
-                </center>
-    
-</div>
-                    
-               
-               
-		
-                <%@include file="footer.jsp" %>
-            </div>
-            <!-- /. PAGE INNER  -->
+             </div>
+              
+     <%@include file="footer.jsp" %>
+            </div>		
+
         </div>
         <!-- /. PAGE WRAPPER  -->
     </div>
