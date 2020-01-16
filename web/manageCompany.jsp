@@ -1,15 +1,10 @@
 <%-- 
-    Document   : index
-    Created on : 17 Dec, 2019, 9:59:25 AM
+    Document   : manageCompany
+    Created on : 16 Jan, 2020, 10:59:06 AM
     Author     : rumit
 --%>
 
-<%@page import="java.sql.*"%>
-<%@page import="java.text.SimpleDateFormat"%>
-<%@page import="java.util.*"%>
-<%@page import="java.util.Date"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.io.*"%>
 <!DOCTYPE html>
 <html >
 
@@ -53,11 +48,11 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a class="active-menu" href="#"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                    
                     <li>
-                        <a href="manageCompany.jsp"><i class="fa fa-pencil"></i> Manage Company</a>
+                        <a class="active-menu" href="#"><i class="fa fa-pencil"></i> Manage Company</a>
                          
                     </li> 
 			
@@ -72,13 +67,10 @@
       
 		<div id="page-wrapper">
 		  <div class="header"> 
-                        <h1 class="page-header">
-                            Dashboard <small>Welcome : Admin </small>
-                        </h1>
+                      <br>
 						<ol class="breadcrumb">
 					  <li><a href="#">Home</a></li>
-					  <li class="active">Dashboard</li>
-					 
+					  <li class="active">Manage Company</li>
 					</ol> 
 									
 		</div>
