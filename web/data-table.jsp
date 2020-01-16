@@ -11,7 +11,7 @@
 <head>
    
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta content="" name="description" />
@@ -31,7 +31,7 @@
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
   
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
-     <link href="css/style_1.css" rel="stylesheet">
+     
     <script src="js/common.min.js"></script>
     <script src="js/custom.min.js"></script>
     <!-- Google Fonts-->
@@ -72,7 +72,7 @@
                     </li> 		 
      
         </nav>
-       
+        
    <div id="page-wrapper">
 <div class="header"> 
        <!-- Static Table Start -->
@@ -95,9 +95,11 @@
 												<option value="all">Export All</option>
 												<option value="selected">Export Selected</option>
 											</select>
+                                        
                                     </div>
+                                    
                                     <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
-                                        data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
+                                        data-cookie-id-table="saveId"  data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                         <thead>
                                             <tr>
                                                 <th data-field="state" data-checkbox="true"></th>
@@ -132,7 +134,16 @@ if(name==null||name.trim().equals(""))
         
         while(rs.next())
         {
-            out.print("<tr><td></td><td>"+rs.getString(1)+"</td><td>"+rs.getString(2)+"</td><td>"+rs.getString(3)+"</td><td>"+rs.getString(4)+"</td><td>"+rs.getString(5)+"</td><td>"+rs.getString(6)+"</td><td class='datatable-ct'><i class='fa fa-check'></i></td></tr>");
+out.print("<tr><td></td>"
+        + "<td>"+rs.getString(1)+"</td>"
+        + "<td>"+rs.getString(2)+"</td>"
+        + "<td>"+rs.getString(3)+"</td>"
+        + "<td>"+rs.getString(4)+"</td>"
+        + "<td>"+rs.getString(5)+"</td>"
+        + "<td>"+rs.getString(6)+"</td>"
+        + "<td class='datatable-ct'><a href='data-table.jsp?updateid="+rs.getString(1)+"'><i class='glyphicon glyphicon-pencil'></i></a> "
+                + "&nbsp; "
+                + "<a href='data-table.jsp?removeid="+rs.getString(1)+"'><i class='glyphicon glyphicon-remove'></i></a></td></tr>");
         }
               
         %>
@@ -174,7 +185,7 @@ if(name==null||name.trim().equals(""))
     <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/tableExport.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
-    <script src="js/data-table/bootstrap-table-editable.js"></script>
+    <!--<script src="js/data-table/bootstrap-table-editable.js"></script>-->
     <script src="js/data-table/bootstrap-editable.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
     <script src="js/data-table/colResizable-1.5.source.js"></script>
