@@ -105,35 +105,27 @@
             </div>
         
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button onclick="sweet()" type="button" class="btn btn-primary">Send link</button>
-	
-      </div>
-<script src="./plugins/sweetalert/js/sweetalert.min.js"></script>
-    <script src="./plugins/sweetalert/js/sweetalert.init.js"></script>
-	<script type="text/javascript">
-		function sweet(){
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button onclick="sweet()" data-dismiss="modal" type="button" class="btn btn-primary">Send link</button>
 
-			swal("Good job!", "Your Varification Link send your gmail", "success");
-			
-			
-		}
+                            </div>
+                      <script src="./plugins/sweetalert/js/sweetalert.min.js"></script>
+                          <script src="./plugins/sweetalert/js/sweetalert.init.js"></script>
+                              <script type="text/javascript">
+                                      function sweet(){
+
+                                              swal("Mail Send!", "Link send in your email.", "success");
+
+
+                                      }
+
+                              </script>
+                          </div>
+                        </div>
+                      </div>
 		
-	</script>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-					
-					
-
-					
 				</form>
 			</div>
 		</div>
