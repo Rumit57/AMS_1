@@ -63,16 +63,16 @@
 					</div>
 					
 					<div>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</div> 
+                                            <br>
+                                        </div> 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
 						<span class="label-input100">Confirm Password</span>
 						<input class="input100" type="password" name="pass" placeholder="Type your Confirm password">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 					<div>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</div> 
+                                            <br>
+                                        </div> 
 					 <div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
@@ -81,16 +81,7 @@
 							</button>
 						</div>
 					</div>
-
-
-
-
-
-
-					
-					
-
-					
+				
 				</form>
 			</div>
 		</div>
