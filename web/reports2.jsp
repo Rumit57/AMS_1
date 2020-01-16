@@ -30,6 +30,8 @@
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   
+ 
   
 </head>
     
@@ -85,24 +87,29 @@
       
 		<div id="page-wrapper">
 		  <div class="header"> 
-                        <h1 class="page-header">
-                            Dashboard <small>Welcome  </small>
-                        </h1>
-						<ol class="breadcrumb">
-					  <li><a href="#">Home</a></li>
-					  <li><a href="#">Dashboard</a></li>
-					  <li class="active">Data</li>
-					</ol> 
-									
+                        		
 		</div>
             <div id="page-inner">
 
                 <!-- /. ROW  -->
-	
-               
                 
-              
-                      
+                <center>
+                    <div class="dropdown">
+    
+     <h3 class="card-title">Reports</h3>
+     <br>
+         <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 30%">
+    <option>Small</option>
+    <option>Medium</option>
+    <option>Large</option>
+</select> 
+  
+  </div>
+                </center>
+    
+</div>
+                    
+               
                
 		
                 <%@include file="footer.jsp" %>
@@ -117,26 +124,11 @@
     <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
-	 
-    <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
-    <!-- Morris Chart Js -->
-    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
-    <script src="assets/js/morris/morris.js"></script>
-	
-	
-	<script src="assets/js/easypiechart.js"></script>
-	<script src="assets/js/easypiechart-data.js"></script>
-	
-	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
-	
+
     <!-- Custom Js -->
     <script src="assets/js/custom-scripts.js"></script>
 
-     
-    <!-- Chart Js -->
-    <script type="text/javascript" src="assets/js/Chart.min.js"></script>  
-    <script type="text/javascript" src="assets/js/chartjs.js"></script> 
+
    
  
 </body>
