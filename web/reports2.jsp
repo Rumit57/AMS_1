@@ -30,12 +30,9 @@
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-   
- 
-  
+
 </head>
-    
- 
+
 <body>
        <!--progress-->
     <link href="css/style_1.css" rel="stylesheet">

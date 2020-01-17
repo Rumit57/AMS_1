@@ -30,10 +30,14 @@
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-  
+    <style>
+        .alert {
+   width:55%;    
+}
+    </style>
 </head>
     
-
+   
 
 <body>
        <!--progress-->
@@ -59,11 +63,11 @@
                         <a class="active-menu" href="HRdeshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="manage_HR2.jsp"><i class="fa fa-pencil"></i> Manage HR</a>
+                            <a href="manage_HR2.jsp"><i class="fa fa-pencil"></i>  HR</a>
                          
                     </li> 
                     <li>
-                        <a href="manage_employee2.jsp"><i class="fa fa-edit"></i> Manage Employee</a>
+                        <a href="manage_employee2.jsp"><i class="fa fa-edit"></i>  Employee</a>
                          
                     </li> 
 			
@@ -81,38 +85,115 @@
 
                 
         </nav>
-            
+       
         
-      
+       
+         <div>
 		<div id="page-wrapper">
 		  <div class="header"> 
-                        <h1 class="page-header">
-                            Dashboard <small>Welcome  </small>
-                        </h1>
-						<ol class="breadcrumb">
-					  <li><a href="#">Home</a></li>
-					  <li><a href="#">Dashboard</a></li>
-					  <li class="active">Data</li>
-					</ol> 
-									
-		</div>
-            <div id="page-inner">
-
+                        <h3 class="page-header">
+                            Dashboard <small>Welcome HR  </small>
+                        </h3>
+					
+				
+                      
+           
                 <!-- /. ROW  -->
+	
+				 
+				
+	<div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                       <div class="panel-heading">
+				 Today Summary
+                       </div>
+                       <div class="panel-body">
+                           <div class="alert alert-success">
+                               <strong><a href="#"> 250 ! </a></strong> Present...
+                            </div>
+                            <div class="alert alert-danger">
+				<strong><a href="#"> 20 ! </a></strong> Absent...
+                            </div>
+				<div class="alert alert-info">
+					<strong> 10 ! </strong> Late Coming.
+				</div>
+				
+			</div>
+                          </div>    
+                         </div>
+		</div>						
+				
+                
+                          
+				 
+				
+			<div class="row">
 
+			  <div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				 Yesterday Summary
+				</div>        
+							  
+							<div class="panel-body"> 
+								<div class="alert alert-success">
+                                                                    <strong><a href=""> 250 ! </a></strong> Presant.
+								</div>
+								
+								<div class="alert alert-danger">
+									<strong><a href=""> 10 ! </strong> Absent...
+								</div>
+							
+                                                                <div class="alert alert-info">
+									<strong><a href=""> 50 ! </strong> Late Coming...
+								</div>
+                                                            <div class="alert alert-info">
+									<strong><a href=""> 70 ! </strong> Late Staying...
+								</div>
+                                                            <div class="alert alert-warning">
+									<strong><a href=""> 20 ! </strong> Missed Punch...
+								</div>
+                                                            </div>
+								
+				</div>
+			</div>		
+                            
+				</div>			
+            
+                      
+               
+                                    
+                              
+                     
+              
+					
+	  <div id="page-inner">
+		
                 <%@include file="footer.jsp" %>
-            </div>
+           
             <!-- /. PAGE INNER  -->
-        </div>
+       
         <!-- /. PAGE WRAPPER  -->
     </div>
     <!-- /. WRAPPER  -->
-
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
     <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 	 
-
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+	
+	
+	<script src="assets/js/easypiechart.js"></script>
+	<script src="assets/js/easypiechart-data.js"></script>
+	
+	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
 	
     <!-- Custom Js -->
     <script src="assets/js/custom-scripts.js"></script>
@@ -121,7 +202,7 @@
     <!-- Chart Js -->
     <script type="text/javascript" src="assets/js/Chart.min.js"></script>  
     <script type="text/javascript" src="assets/js/chartjs.js"></script> 
-   
- 
+    <script type="text/javascript" >
+    </script>
 </body>
 </html>
