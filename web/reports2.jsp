@@ -56,12 +56,12 @@
                     <li>
                         <a  href="HRdeshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-                    <li>
+<!--                    <li>
                         <a  href="manage_HR2.jsp"><i class="fa fa-pencil"></i> Manage HR</a>
                          
-                    </li> 
+                    </li> -->
                     <li>
-                        <a href="manage_employee2.jsp"><i class="fa fa-edit"></i> Manage Employee</a>
+                        <a href="manage_employee2.jsp"><i class="fa fa-edit"></i> Employee</a>
                          
                     </li> 
 			
@@ -80,24 +80,28 @@
 		  <div class="header"> 
                       
                   </div>
+                   
                          <div id="page-inner">
-
+ <center>
                
                     <div class="dropdown">
     
      <h3 >Reports</h3>
      <br>
             <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 30%">
-             <option id="1">Small</option>
-             <option id="2">Medium</option>
-             <option id="3">Large</option>
+              <option id="1">--Select Report--</option>
+                <option id="1">All Employee Working Hour Report</option>
+             <option id="2">Late Coming Report.
+</option>
+             <option id="3">Late Staying Report.
+</option>
             </select> 
   
              </div>
-              
+             </center>
      <%@include file="footer.jsp" %>
             </div>		
-
+ 
         </div>
         <!-- /. PAGE WRAPPER  -->
     </div>

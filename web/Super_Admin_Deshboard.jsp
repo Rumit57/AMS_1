@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta content="" name="description" />
     <meta content="webthemez" name="author" />
-    <title>Primavera systems</title>
+    <title>Primavera Systems</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -30,9 +30,15 @@
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-  
+    <style>
+        
+        .alert {
+   width:55%;    
+}
+    </style>
 </head>
-  
+    
+   
 
 <body>
        <!--progress-->
@@ -47,7 +53,7 @@
         </div>
     </div>
     <div id="wrapper">
-        <%@include file="header2.jsp" %>
+        <%@include file="header3.jsp" %>
         
          <!--/. NAV TOP  -->
        <nav class="navbar-default navbar-side" role="navigation">
@@ -55,63 +61,100 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a  href="HRdeshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a class="active-menu" href="Super_Admin_Deshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-<!--                    <li>
-                        <a class="active-menu" href="manage_HR2.jsp"><i class="fa fa-pencil"></i> Manage HR</a>
-                         
-                    </li> -->
                     <li>
-                        <a href="manage_employee2.jsp"><i class="fa fa-edit"></i> Employee</a>
+                            <a href="manage_HR2.jsp"><i class="fa fa-pencil"></i>  Company</a>
+                         
+                    </li> 
+                    <li>
+                        <a href="manage_employee2.jsp"><i class="fa fa-pencil"></i>  Admin</a>
+                         
+                    </li> 
+ <li>
+                        <a href="manage_employee2.jsp"><i class="fa fa-pencil"></i>  HR</a>
                          
                     </li> 
 			
-                      <li>
-                        <a href="live_activity_table2.jsp"><i class="fa fa-table"></i> Live Activity Table </a>
-                           
-                    </li> 		 
-		<li>
-                        <a href="reports2.jsp"><i class="glyphicon glyphicon-list-alt"></i> Reports </a>
-                           
-                    </li> 	
-                   
+                      
                   
                        
 
                 
         </nav>
        
-            
         
-      
+       
+         <div>
 		<div id="page-wrapper">
 		  <div class="header"> 
                         <h1 class="page-header">
-                            Dashboard <small>Welcome  </small>
+                            Dashboard <small>Welcome Admin  </small>
                         </h1>
-						<ol class="breadcrumb">
-					  <li><a href="#">Home</a></li>
-					  <li><a href="#">Dashboard</a></li>
-					  <li class="active">Data</li>
-					</ol> 
-									
-		</div>
-            <div id="page-inner">
-
-                <!-- /. ROW  -->
-	
-               
-                
-              
+				</div>			
+            
                       
                
+                                    
+                           <div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="board">
+                        <div class="panel panel-primary">
+						<div class="number">
+							<h3>
+								</h3><h3>440</h3>
+								<small> Ragistered Company</small>
+							 
+						</div>
+						<div class="icon">
+						   <i class="fa fa-eye fa-5x red"></i>
+						</div>
+		 
+                        </div>
+						</div>
+                    </div>   
+                                
+                           <div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="board">
+                        <div class="panel panel-primary">
+						<div class="number">
+							<h3>
+								</h3><h3>440</h3>
+								<small> Company wise Admin</small>
+							 
+						</div>
+						<div class="icon">
+						   <i class="fa fa-users fa-5x red"></i>
+						</div>
+		 
+                        </div>
+						</div>
+                    </div>   
+                   
+                           <div class="col-md-4 col-sm-12 col-xs-12">
+                               <div class="board">
+                        <div class="panel panel-primary">
+						<div class="number">
+							<h3>
+								</h3><h3>440</h3>
+								<small> Company wise HR</small>
+							 
+						</div>
+						<div class="icon">
+						   <i class="fa fa-users fa-5x red"></i>
+						</div>
+		 
+                        </div>
+						</div>
+                    </div>   
+					
+<!--	  <div id="page-inner">
 		
                 <%@include file="footer.jsp" %>
-            </div>
-            <!-- /. PAGE INNER  -->
-        </div>
-        <!-- /. PAGE WRAPPER  -->
-    </div>
+           
+             /. PAGE INNER  
+       
+         /. PAGE WRAPPER  
+    </div>-->
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->
@@ -138,7 +181,7 @@
     <!-- Chart Js -->
     <script type="text/javascript" src="assets/js/Chart.min.js"></script>  
     <script type="text/javascript" src="assets/js/chartjs.js"></script> 
-   
- 
+    <script type="text/javascript" >
+    </script>
 </body>
 </html>

@@ -63,10 +63,10 @@
                     <li>
                         <a class="active-menu" href="HRdeshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-                    <li>
+<!--                    <li>
                             <a href="manage_HR2.jsp"><i class="fa fa-pencil"></i>  HR</a>
                          
-                    </li> 
+                    </li> -->
                     <li>
                         <a href="manage_employee2.jsp"><i class="fa fa-edit"></i>  Employee</a>
                          
