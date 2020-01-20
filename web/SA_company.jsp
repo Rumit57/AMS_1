@@ -116,12 +116,12 @@
 
                                                       <div class="form-group">
                                                     <label>Address 1</label>
-                                                    <input type="text" placeholder="Enter Address 1..." class="form-control">
+                                                    <input type="text" placeholder="Enter Address Line 1..." class="form-control">
                                                   </div>
 
                                                       <div class="form-group">
                                                     <label>Address 2</label>
-                                                    <input type="text" placeholder="Enter Address 2..." class="form-control">
+                                                    <input type="text" placeholder="Enter Address Line 2..." class="form-control">
                                                   </div>
 
                                                       <div class="form-group">
