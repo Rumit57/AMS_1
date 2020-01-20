@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   
     <style>
         
         .alert {
@@ -96,9 +97,12 @@
                                         <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
                                           <div role="document" class="modal-dialog">
                                             <div class="modal-content">
-
+                                        <div class="modal-header">
+                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                  <center> <h4 class="modal-title">Company Registration</h4> </center>
+                                                </div>
                                               <div class="modal-body">
-                                                  <center><h1><p><strong>Company Ragistration</strong></p></h1></center>
+                                                  
                                                   <form action="#">
                                                   <div class="form-group">
                                                     <label>Name</label>
