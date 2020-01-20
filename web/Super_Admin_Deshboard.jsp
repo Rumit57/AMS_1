@@ -64,16 +64,16 @@
                         <a class="active-menu" href="Super_Admin_Deshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                            <a href="manage_HR2.jsp"><i class="fa fa-pencil"></i>  Company</a>
+                        <a href="SA_company.jsp"><i class="fa fa-pencil"></i>  Company</a>
                          
                     </li> 
                     <li>
-                        <a href="manage_employee2.jsp"><i class="fa fa-pencil"></i>  Admin</a>
+                        <a href="SA_admin.jsp"><i class="fa fa-pencil"></i>  Admin</a>
                          
                     </li> 
- <li>
-                        <a href="manage_employee2.jsp"><i class="fa fa-pencil"></i>  HR</a>
-                         
+                    <li>
+                        <a href="SA_HR.jsp"><i class="fa fa-pencil"></i>  HR</a>
+
                     </li> 
 			
                       
