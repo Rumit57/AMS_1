@@ -22,7 +22,8 @@
     <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
     <!-- Custom Styles-->
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
-    
+     <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
+    <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <style>
@@ -70,46 +71,157 @@
      <a href="SA_HR.jsp"><i class="fa fa-pencil"></i>  HR</a>
                          
                     </li> 
-			
-                      
-                  
-                       
-
-                
+    
         </nav>
-       
-        
-       
-         
-		<div id="page-wrapper">
-		 	
-            
-                      
-               
+<div id="page-wrapper">
+<div class="header"> 
+       <!-- Static Table Start -->
+       <div class="row">
+            <div class="col-md-12">
+        <div class="data-table-area mg-tb-15">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="sparkline13-list">
+                            <div class="sparkline13-hd">
+                                <div class="main-sparkline13-hd">
+                                    <h1>Company <span class="table-project-n">Data</span></h1>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="sparkline13-graph">
+                                <div class="datatable-dashv1-list custom-datatable-overright">
+                                    <div id="toolbar">
+                                        <button class="btn-primary">Add Company</button>
+                                        
+                                    </div>
                                     
-                        
-	  <div id="page-inner">
+                                    <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true"  data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
+                                        data-cookie-id-table="saveId" data-click-to-select="true" data-toolbar="#toolbar">
+                                        <thead>
+                                            <tr>
+                                                <th data-field="state" data-checkbox="true"></th>
+                                                <th data-field="id">ID</th>
+                                                <th data-field="name" data-editable="true">Name</th>
+                                                <th data-field="Email" data-editable="true">Email</th>
+                                                <th data-field="Phone" data-editable="true">Phone</th>
+                                                <th data-field="action">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                                 <%
+//String name=request.getParameter("val");
+//try{
+//        Class.forName("com.mysql.jdbc.Driver");
+//        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/AMS","root","mysql");
+//if(name==null||name.trim().equals(""))
+//{
+//    PreparedStatement ps=con.prepareStatement("select * from AMS.manage" );
+//    ResultSet rs=ps.executeQuery();
+//
+//    if(!rs.isBeforeFirst()) 
+//    {    
+//        out.println("<p>No Record Found!</p>"); 
+//    }
+//    else
+//    {
+//   
+//        
+//        while(rs.next())
+//        {
+//out.print("<tr><td></td>"
+//        + "<td>"+rs.getString(1)+"</td>"
+//        + "<td>"+rs.getString(2)+"</td>"
+//        + "<td>"+rs.getString(3)+"</td>"
+//        + "<td>"+rs.getString(4)+"</td>"
+//        + "<td>"+rs.getString(5)+"</td>"
+//        + "<td>"+rs.getString(6)+"</td>"
+//        + "<td class='datatable-ct'><a href='data-table.jsp?updateid="+rs.getString(1)+"'><i class='glyphicon glyphicon-pencil'></i></a> "
+//                + "&nbsp; "
+//                + "<a href='data-table.jsp?removeid="+rs.getString(1)+"'><i class='glyphicon glyphicon-remove'></i></a></td></tr>");
+//        }
+//              
+//        %>
+                      <tr>
+                     <td></td>
+                     <td>1</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>   
+                      <tr>
+                     <td></td>
+                     <td>2</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>   
+                      <tr>
+                     <td></td>
+                     <td>3</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>   
+                      <tr>
+                     <td></td>
+                     <td>4</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>   
+                      
+
+                                        </tbody>
+                                    </table>
+        <%
+//    }
+//       
+//    }
+//}catch(Exception e)
+//    {
+//        out.print(e);
+//    }
+%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Static Table End -->
+                  </div> 
+       </div>
+</div>
+       <div id="page-inner">
 		
                 <%@include file="footer.jsp" %>
-          </div>
-        
-    </div>
-              
-                </div>
+            </div>
+   </div>
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->
     <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
-	 
-    <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
-    
-	
-	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
-	
-  
-    <script src="assets/js/custom-scripts.js"></script>
+
+    <script src="js/data-table/bootstrap-table.js"></script>
+    <script src="js/data-table/data-table-active.js"></script>
+    <script src="js/data-table/bootstrap-table-resizable.js"></script>
+    <script src="js/data-table/colResizable-1.5.source.js"></script>
 </body>
 </html>
