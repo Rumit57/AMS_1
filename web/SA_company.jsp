@@ -156,7 +156,6 @@
                                         data-cookie-id-table="saveId" data-click-to-select="true" data-toolbar="#toolbar">
                                         <thead>
                                             <tr>
-                                                <th data-field="state" data-checkbox="true"></th>
                                                 <th data-field="id">ID</th>
                                                 <th data-field="name" data-editable="true">Name</th>
                                                 <th data-field="Email" data-editable="true">Email</th>
@@ -186,8 +185,7 @@
 //        
 //        while(rs.next())
 //        {
-//out.print("<tr><td></td>"
-//        + "<td>"+rs.getString(1)+"</td>"
+//out.print("<td>"+rs.getString(1)+"</td>"
 //        + "<td>"+rs.getString(2)+"</td>"
 //        + "<td>"+rs.getString(3)+"</td>"
 //        + "<td>"+rs.getString(4)+"</td>"
@@ -200,7 +198,6 @@
 //              
 //        %>
                       <tr>
-                     <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -209,9 +206,8 @@
                 &nbsp;
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
-                      <tr>
-                     <td></td>
-                     <td>2</td>
+                    <tr>
+                     <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
                      <td>987654322</td>
@@ -219,9 +215,8 @@
                 &nbsp;
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
-                      <tr>
-                     <td></td>
-                     <td>3</td>
+                    <tr>
+                     <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
                      <td>987654322</td>
@@ -229,9 +224,73 @@
                 &nbsp;
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
+                     <tr>
+                     <td>1</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>   
+                     
+                     <tr>
+                     <td>1</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>   
+                      
+                     <tr>
+                     <td>1</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>    
                       <tr>
-                     <td></td>
-                     <td>4</td>
+                     <td>1</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>   
+                    <tr>
+                     <td>1</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>   
+                     <tr>
+                     <td>1</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>   
+                     <tr>
+                     <td>1</td>
+                     <td>Primavera Systems</td>
+                     <td>primavera@hda.com</td>
+                     <td>987654322</td>
+                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+                &nbsp;
+                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                      </tr>   
+                     <tr>
+                     <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
                      <td>987654322</td>
