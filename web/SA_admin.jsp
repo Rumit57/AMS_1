@@ -36,10 +36,8 @@
         .alert {
    width:55%;    
 }
-.modal-content{
-    box-sizing: border-box;
-}
-}
+
+
     </style>
 </head>
     
@@ -94,12 +92,9 @@
 		 	
             
          
-            <div class="col-lg-4">
-              <div class="card">
-                 <div class="card-header d-flex align-items-center">
-                  <h4>Modal Form</h4>
-                </div>
-                <div class="card-body text-center">
+          
+                
+               
                   <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary"> + Add Company </button>
                   <!-- Modal-->
                   <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
@@ -158,9 +153,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
+              
+          
       
       
     </div>
