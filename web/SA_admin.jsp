@@ -18,17 +18,27 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
+   
     <!-- Morris Chart Styles-->
     <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
     <!-- Custom Styles-->
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
-    
+     <!-- jQuery Circle-->
+   
+
+    <!-- theme stylesheet-->
+   
+ 
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <style>
         
         .alert {
    width:55%;    
+}
+.modal-content{
+    box-sizing: border-box;
+}
 }
     </style>
 </head>
@@ -83,7 +93,77 @@
       	<div id="page-wrapper">
 		 	
             
-            <button>REG</button>   
+         
+            <div class="col-lg-4">
+              <div class="card">
+                 <div class="card-header d-flex align-items-center">
+                  <h4>Modal Form</h4>
+                </div>
+                <div class="card-body text-center">
+                  <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary"> + Add Company </button>
+                  <!-- Modal-->
+                  <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+                    <div role="document" class="modal-dialog">
+                      <div class="modal-content">
+                        
+                        <div class="modal-body">
+                            <center><h1><p><strong>Company Ragistration</strong></p></h1></center>
+                            <form action="#">
+                            <div class="form-group">
+                              <label>Name</label>
+                              <input type="text" placeholder="Enter Name..." class="form-control">
+                            </div>
+                             
+				<div class="form-group">
+                              <label>Email</label>
+                              <input type="text" placeholder="Enter Email..." class="form-control">
+                            </div>
+                                
+				<div class="form-group">
+                              <label>Address 1</label>
+                              <input type="text" placeholder="Enter Address 1..." class="form-control">
+                            </div>
+                                        
+				<div class="form-group">
+                              <label>Address 2</label>
+                              <input type="text" placeholder="Enter Address 2..." class="form-control">
+                            </div>
+                                             
+				<div class="form-group">
+                              <label>Phone Number</label>
+                              <input type="text" placeholder="Enter Phone Number" class="form-control">
+                            </div>
+                                                  
+				<div class="form-group">
+                              <label>City</label>
+                              <input type="text" placeholder="Enter City..." class="form-control">
+                            </div>
+                                                     
+				<div class="form-group">
+                              <label>State</label>
+                              <input type="text" placeholder="Enter State..." class="form-control">
+                            </div>
+                                             
+                            <div class="form-group">       
+                              <label>Country</label>
+                              <input type="text" placeholder="Enter Country..." class="form-control">
+                            </div>
+                           
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+      
+    </div>
                
                                     
                         
@@ -102,7 +182,10 @@
     <!-- Metis Menu Js -->
     <script src="assets/js/jquery.metisMenu.js"></script>
     
-	
+	  <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  
 	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
 	
   

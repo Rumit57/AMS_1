@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta content="" name="description" />
     <meta content="webthemez" name="author" />
-    <title>Primavera Systems</title>
+    <title>HR Dashboard</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -33,7 +33,10 @@
     <style>
         
         .alert {
-   width:55%;    
+   width:15%;
+   align-content:space-around;
+   border-bottom-left-radius: 10px;
+  
 }
     </style>
 </head>
@@ -102,7 +105,7 @@
                 <!-- /. ROW  -->
 	
 				 
-				
+                	
 	<div class="row">
             <div class="col-md-12">
                 <div class="panel panel-default">
@@ -124,7 +127,7 @@
                           </div>    
                          </div>
 		</div>						
-				
+			
                 
                           
 				 
