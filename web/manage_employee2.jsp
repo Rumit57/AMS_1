@@ -23,26 +23,25 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
      <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
     <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
-    <!-- Morris Chart Styles-->
-    <!-- Morris Chart Styles-->
-    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
-    <!-- Custom Styles-->
-    <link href="assets/css/custom-styles.css" rel="stylesheet" />
-    
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   
     <style>
-.alert {
+        
+        .alert {
    width:55%;    
 }
     </style>
 </head>
+    
+   
 
 <body>
-    
-        
        <!--progress-->
     <link href="css/style_1.css" rel="stylesheet">
     <script src="js/common.min.js"></script>
@@ -392,7 +391,7 @@
     <!--<script src="js/data-table/bootstrap-table-editable.js"></script>-->
     <script src="js/data-table/bootstrap-editable.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
-    <script src="js/data-table/colResizable-1.5.source.js"></script>
+    
     <script src="js/data-table/bootstrap-table-export.js"></script>
   
 </body>
