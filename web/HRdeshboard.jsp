@@ -76,7 +76,7 @@
                     </li> 
 			
                       <li>
-                        <a href="live_activity_table2.jsp"><i class="fa fa-table"></i> Live Activity Table </a>
+                        <a href="live_activity_table2.jsp"><i class="fa fa-table"></i> Live Activity  </a>
                            
                     </li> 		 
 		<li>
@@ -86,26 +86,18 @@
                    
                   
                        
-
-                
-        </nav>
-       
-        
-       
+                </ul>   
+            </div>
+       </nav>
+    </div>      
+     
          <div>
 		<div id="page-wrapper">
 		  <div class="header"> 
                         <h3 class="page-header">
                             Dashboard <small>Welcome HR  </small>
                         </h3>
-					
-				
-                      
-           
-                <!-- /. ROW  -->
-	
-				 
-                	
+		
 	<div class="row">
             <div class="col-md-12">
                 <div class="panel panel-default">
