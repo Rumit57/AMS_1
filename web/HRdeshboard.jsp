@@ -45,7 +45,7 @@
 
 <body>
        <!--progress-->
-    <link href="css/style_1.css" rel="stylesheet">
+    <link href="css/style_2.css" rel="stylesheet">
     <script src="js/common.min.js"></script>
     <script src="js/custom.min.js"></script>
     <div id="preloader">
@@ -91,87 +91,128 @@
        </nav>
     </div>      
      
-         <div>
+       
 		<div id="page-wrapper">
 		  <div class="header"> 
                         <h3 class="page-header">
                             Dashboard <small>Welcome HR  </small>
                         </h3>
-		
-	<div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-default">
+	
+          <div class="row">
+                    <div class="col-12">
+  <div class="panel panel-default">
                        <div class="panel-heading">
 				 Today Summary
                        </div>
-                       <div class="panel-body">
-                           <div class="alert alert-success">
-                               <strong><a href="#"> 250 ! </a></strong> Present...
+      <div class="panel-body ">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card">
+                                    <div style="background-color: #dff0d8" class="card-body">
+                                        <h5 class="card-title">Present</h5>
+                                        <p class="card-text">250 !</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="alert alert-danger">
-				<strong><a href="#"> 20 ! </a></strong> Absent...
+                            <!-- End Col -->
+                            <div  class="col-md-6 col-lg-3">
+                                <div class="card">
+                                    <div style="background-color: #f2dede" class="card-body">
+                                        <h5 class="card-title">Absent</h5>
+                                        <p class="card-text">20 !</p>
+                                    </div>
+                                </div>
                             </div>
-				<div class="alert alert-info">
-					<strong> 10 ! </strong> Late Coming.
-				</div>
-				
-			</div>
-                          </div>    
-                         </div>
-		</div>						
-			
-                
-                          
-				 
-				
-			<div class="row">
-
-			  <div class="col-md-12">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-				 Yesterday Summary
-				</div>        
-							  
-							<div class="panel-body"> 
-								<div class="alert alert-success">
-                                                                    <strong><a href=""> 250 ! </a></strong> Presant.
-								</div>
-								
-								<div class="alert alert-danger">
-									<strong><a href=""> 10 ! </strong> Absent...
-								</div>
-							
-                                                                <div class="alert alert-info">
-									<strong><a href=""> 50 ! </strong> Late Coming...
-								</div>
-                                                            <div class="alert alert-info">
-									<strong><a href=""> 70 ! </strong> Late Staying...
-								</div>
-                                                            <div class="alert alert-warning">
-									<strong><a href=""> 20 ! </strong> Missed Punch...
-								</div>
-                                                            </div>
-								
-				</div>
-			</div>		
+                            <!-- End Col -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card">
+                                    <div style="background-color: #d9edf7" class="card-body" >
+                                        <h5 class="card-title">Late Coming.</h5>
+                                        <p class="card-text">10 !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
                             
-				</div>			
-            
+                           
+                          
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    </div>
+                    </div>
+                </div>
                       
-               
-                                    
-                              
-                     
-              
+                        <div class="row">
+                    <div class="col-12">
+  <div class="panel panel-default">
+                       <div class="panel-heading">
+				 Yesterday Summary
+                       </div>
+      <div class="panel-body ">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card">
+                                    <div style="background-color: #dff0d8" class="card-body">
+                                        <h5 class="card-title">Present</h5>
+                                        <p class="card-text">250 !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
+                            <div  class="col-md-6 col-lg-3">
+                                <div class="card">
+                                    <div style="background-color: #f2dede" class="card-body">
+                                        <h5 class="card-title">Absent</h5>
+                                        <p class="card-text">20 !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card">
+                                    <div style="background-color: #d9edf7" class="card-body" >
+                                        <h5 class="card-title">Late Coming.</h5>
+                                        <p class="card-text">10 !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card">
+                                    <div style="background-color: #d9edf7" class="card-body" >
+                                        <h5 class="card-title">Late Staying.</h5>
+                                        <p class="card-text">25 !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card">
+                                    <div style="background-color: #d9edf7" class="card-body" >
+                                        <h5 class="card-title">Missed Punch.</h5>
+                                        <p class="card-text">5 !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col -->
+
+                        </div>
+                        <!-- End row -->
+                    </div>
+                    </div>
+                    </div>
+                </div>
+     
 					
 	  <div id="page-inner">
 		
                 <%@include file="footer.jsp" %>
-           
+          </div>
             <!-- /. PAGE INNER  -->
-       
+                  </div>
         <!-- /. PAGE WRAPPER  -->
-    </div>
+                </div>
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->

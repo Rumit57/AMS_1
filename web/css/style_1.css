@@ -267,7 +267,7 @@ body {
   }
 }
 
-
+ 
 a {transition: all 0.3s ease 0s;text-decoration:none;}
 a:hover{
   color: #ec4445;
@@ -3539,3 +3539,4 @@ element.style {
 div#sparklinehome canvas {
     width: 100% !important;
 }
+
