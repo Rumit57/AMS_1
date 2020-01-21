@@ -34,8 +34,7 @@
         
         .alert {
    width:15%;
-   align-content:space-around;
-   border-bottom-left-radius: 10px;
+  
   
 }
     </style>
@@ -64,12 +63,8 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a class="active-menu" href="HRdeshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a class="active-menu" href="#"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-<!--                    <li>
-                            <a href="manage_HR2.jsp"><i class="fa fa-pencil"></i>  HR</a>
-                         
-                    </li> -->
                     <li>
                         <a href="manage_employee2.jsp"><i class="fa fa-edit"></i>  Employee</a>
                          
