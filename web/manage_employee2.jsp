@@ -18,23 +18,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta content="" name="description" />
     <meta content="webthemez" name="author" />
-    <title>Primavera systems</title>
+    <title>Primavera Systems</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!-- Morris Chart Styles-->
      <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
     <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
+    <!-- Morris Chart Styles-->
+    <!-- Morris Chart Styles-->
     <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
     <!-- Custom Styles-->
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-  
+    <style>
+        
+        .alert {
+   width:55%;    
+}
+    </style>
 </head>
- 
 
 <body>
     
@@ -59,13 +64,9 @@
 
                     <li>
                         <a  href="HRdeshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
-                    </li>
-<!--                    <li>
-                        <a  href="manage_HR2.jsp"><i class="fa fa-pencil"></i> Manage HR</a>
-                         
-                    </li> -->
+                    </li>            
                     <li>
-                        <a class="active-menu" href="manage_employee2.jsp"><i class="fa fa-edit"></i> Employee</a>
+                        <a class="active-menu" href="#"><i class="fa fa-edit"></i> Employee</a>
                          
                     </li> 
 			
@@ -346,67 +347,31 @@
         <!-- Static Table End -->
                   </div> 
        </div>						
-		</div>
-            <div id="page-inner">
-
-                <!-- /. ROW  -->
-	
-               
-                
-              
-                      
-               
+		
+   	  <div id="page-inner">
 		
                 <%@include file="footer.jsp" %>
-            </div>
-              </div>
-            <!-- /. PAGE INNER  -->
-        </div>
-        <!-- /. PAGE WRAPPER  -->
-   
-    <!-- /. WRAPPER  -->
-    <!-- JS Scripts-->
-    <!-- jQuery Js -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+          </div>
+        
+    </div>
+              
+                </div>
+</div>
+          
+   <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 	 
-    <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
-    <!-- Morris Chart Js -->
-    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
-    <script src="assets/js/morris/morris.js"></script>
-	
-	
-	<script src="assets/js/easypiechart.js"></script>
-	<script src="assets/js/easypiechart-data.js"></script>
-	
-	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
-	
-    <!-- Custom Js -->
-    <script src="assets/js/custom-scripts.js"></script>
-
-     
-    <!-- Chart Js -->
-    <script type="text/javascript" src="assets/js/Chart.min.js"></script>  
-    <script type="text/javascript" src="assets/js/chartjs.js"></script> 
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- Bootstrap Js -->
-    <script src="assets/js/bootstrap.min.js"></script>
-	 
-    <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
+ 
     
 	  <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   
-	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
 	 <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
     <script src="js/data-table/colResizable-1.5.source.js"></script>
   
- 
 </body>
 </html>
