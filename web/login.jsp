@@ -12,17 +12,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
 
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="./plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+        <link href="./plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
 </head>
 <body>
@@ -48,9 +47,8 @@
 					</div>
 					
 					<div class="text-right p-t-8 p-b-31">
-					<a data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="">
+					<a data-toggle="modal" data-target="#exampleModal">
 							Forgot password?
- 
 						</a>
 					</div>
 					 <div class="container-login100-form-btn">
@@ -61,39 +59,34 @@
 							</button>
 						</div>
 					</div>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ </form>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       
       <div class="modal-body">
        
 	
-            <div class="panel panel-default">
               <div class="panel-body">
                 <div class="text-center">
                   <h3><i class="fa fa-lock fa-4x"></i></h3><br>
                   <h3 class="text-center">Forgot Password?</h3><br>
                   <p>You can reset your password here.</p><br>
-                  <div class="panel-body">
+                 
     
-                      <form id="register-form" action="mail"  autocomplete="off" class="form" method="post">
+                      <form id="register-form" action="mail" class="form" method="post">
     
                       <div class="form-group">
-                        <div class="">
+                       
                          
-                          <input id="email" name="to" placeholder="email address" class="form-control"  type="email" >
-                        </div>
+                            <input id="email" name="to" placeholder="email address" class="form-control"  type="email" required=""/>
+                      
                       </div>
                      
-                    </form>
-             
-                  </div>
+                   </form>
                 </div>
               </div>
-            </div>
         
-
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -104,10 +97,7 @@
                           <script src="./plugins/sweetalert/js/sweetalert.init.js"></script>
                               <script type="text/javascript">
                                       function sweet(){
-
                                               swal("Mail Send!", "Link send in your email.", "success");
-
-
                                       }
 
                               </script>
@@ -115,7 +105,6 @@
                         </div>
                       </div>
 		
-				</form>
 			</div>
 		</div>
 	</div>
@@ -125,12 +114,6 @@
 	
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-
-<script src="vendor/popper/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
  <script src="./plugins/sweetalert/js/sweetalert.min.js"></script>
