@@ -177,7 +177,7 @@
     <script src="assets/js/jquery.metisMenu.js"></script>
     
 	  <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/popper/umd/popper.min.js"> </script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   
 	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
