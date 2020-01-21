@@ -34,8 +34,7 @@
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <style>
-        
-        .alert {
+.alert {
    width:55%;    
 }
     </style>
@@ -102,22 +101,29 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="sparkline13-list">
-                            <div class="sparkline13-hd">
-                                <div class="main-sparkline13-hd">
-                                    <h1>Employee Data</h1>
-                                    <br>
-                                </div>
-                            </div>
+                            
                             <div class="sparkline13-graph">
                                 <div class="datatable-dashv1-list custom-datatable-overright">
+                                      <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary"> + Add Employee </button>
+                                        
+                                        <button class="btn btn-success" type="button" name="Import" >Import</button>
                                     <div id="toolbar">
-                                        <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary"> + Add Employee </button>
+                                        
+                                        <select class="form-control">
+                                                    <option value="">Export Basic</option>
+                                                    <option value="all">Export All</option>
+                                                    <option value="selected">Export Selected</option>
+                                        </select>
+                                        
+                                    </div>
+                                        
                                         <!-- Modal-->
                                         <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
                                           <div role="document" class="modal-dialog">
                                             <div class="modal-content">
                                         <div class="modal-header">
                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                  
                                                   <center> <h4 class="modal-title">Employee Registration</h4> </center>
                                                 </div>
                                               <div class="modal-body">
@@ -179,9 +185,10 @@
                                     </div>
                                     
                                     <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true"  data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
-                                        data-cookie-id-table="saveId" data-click-to-select="true" data-toolbar="#toolbar">
+                                        data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                         <thead>
                                             <tr>
+                                                <th data-field="state" data-checkbox="true"></th>
                                                 <th data-field="id">ID</th>
                                                 <th data-field="name" data-editable="true">Name</th>
                                                 <th data-field="Email" data-editable="true">Email</th>
@@ -224,6 +231,7 @@
 //              
 //        %>
                       <tr>
+                          <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -233,6 +241,7 @@
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
                     <tr>
+                        <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -242,6 +251,7 @@
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
                     <tr>
+                        <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -251,6 +261,7 @@
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
                      <tr>
+                         <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -261,6 +272,7 @@
                       </tr>   
                      
                      <tr>
+                         <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -271,6 +283,7 @@
                       </tr>   
                       
                      <tr>
+                         <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -280,6 +293,7 @@
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>    
                       <tr>
+                          <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -289,6 +303,7 @@
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
                     <tr>
+                        <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -298,6 +313,7 @@
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
                      <tr>
+                         <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -307,6 +323,7 @@
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
                      <tr>
+                         <td></td>
                      <td>1</td>
                      <td>niyantras Systems</td>
                      <td>primavera@hda.com</td>
@@ -316,6 +333,7 @@
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
                      <tr>
+                         <td></td>
                      <td>1</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
@@ -356,7 +374,7 @@
     </div>
               
                 </div>
-</div>
+
           
    <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
@@ -368,10 +386,14 @@
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   
-	 <script src="js/data-table/bootstrap-table.js"></script>
+     <script src="js/data-table/bootstrap-table.js"></script>
+    <script src="js/data-table/tableExport.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
+    <!--<script src="js/data-table/bootstrap-table-editable.js"></script>-->
+    <script src="js/data-table/bootstrap-editable.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
     <script src="js/data-table/colResizable-1.5.source.js"></script>
+    <script src="js/data-table/bootstrap-table-export.js"></script>
   
 </body>
 </html>
