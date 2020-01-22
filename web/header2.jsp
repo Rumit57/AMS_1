@@ -44,11 +44,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.jsp"><strong><i class="icon fa fa-desktop"></i> AMS</strong></a>
+                <a class="navbar-brand" href="HRdeshboard.jsp"><strong><i class="icon fa fa-desktop"></i> AMS</strong></a>
 				
-		<div id="sideNav" href="">
-		<i class="fa fa-bars icon"></i> 
-		</div>
+		
             </div>
  
             <ul class="nav navbar-top-links navbar-right">

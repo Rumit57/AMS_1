@@ -26,7 +26,7 @@
     <!-- Morris Chart Styles-->
     <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
     <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
-    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+   
     <!-- Custom Styles-->
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
     
@@ -74,10 +74,7 @@
                            
                     </li> 	
                    
-                  
-                       
 
-                
         </nav>
        
         
@@ -395,14 +392,7 @@
 		</div>
             <div id="page-inner">
 
-                <!-- /. ROW  -->
-	
-               
-                
-              
-                      
-               
-		
+     
                 <%@include file="footer.jsp" %>
             </div>
             <!-- /. PAGE INNER  -->
@@ -410,44 +400,18 @@
         <!-- /. PAGE WRAPPER  -->
     </div>
     <!-- /. WRAPPER  -->
-    <!-- JS Scripts-->
-    <!-- jQuery Js -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- Bootstrap Js -->
-    <script src="assets/js/bootstrap.min.js"></script>
-	 
-    <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
-    <!-- Morris Chart Js -->
-    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
-    <script src="assets/js/morris/morris.js"></script>
-	
-	
-	<script src="assets/js/easypiechart.js"></script>
-	<script src="assets/js/easypiechart-data.js"></script>
-	
-	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
-	
-    <!-- Custom Js -->
-    <script src="assets/js/custom-scripts.js"></script>
-
-     
-    <!-- Chart Js -->
-    <script type="text/javascript" src="assets/js/Chart.min.js"></script>  
-    <script type="text/javascript" src="assets/js/chartjs.js"></script> 
+    
    
   <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 	 
-    <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
     
 	  <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   
-	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+	
 	 <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>

@@ -11,7 +11,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.io.*"%>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 
 <head>
     <meta charset="utf-8" />
@@ -104,35 +104,27 @@ function searchInfo1(){
                     <li>
                         <a  href="HRdeshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-<!--                    <li>
-                        <a  href="manage_HR2.jsp"><i class="fa fa-pencil"></i> Manage HR</a>
-                         
-                    </li> -->
                     <li>
                         <a href="manage_employee2.jsp"><i class="fa fa-edit"></i> Employee</a>
                          
                     </li> 
 			
                       <li>
-                        <a class="active-menu" href="live_activity_table2.jsp"><i class="fa fa-table"></i> Live Activity Table </a>
+                        <a class="active-menu" href="live_activity_table2.jsp"><i class="fa fa-table"></i> Live Activity </a>
                            
                     </li> 		 
 		<li>
                         <a href="reports2.jsp"><i class="glyphicon glyphicon-list-alt"></i> Reports </a>
                            
                     </li> 	
-                   
-                  
-                       
-
-                
+                </ul>
+            </div>
+    
         </nav>
        
- <div id="page-wrapper">
-		 
-            <div id="page-inner"> 
-				 
-			<h3>Search Employee</h3>
+        <div id="page-wrapper">
+		 <div class="header"> 
+                     <h3 class="page-header">Search Employee</h3>
                         <br>
                             <form name="vinform" class="form-inline"  >
                             
@@ -140,21 +132,18 @@ function searchInfo1(){
                             <input class="form-control" type="date" name="name" id="name" onfocusin="searchInfo()"/>
                             &emsp;&emsp;&emsp;
                             
-                            &emsp;&emsp;&emsp;
-                            <input class="login100-form-btn" type="button" name="Import" value="Import">
-                            &emsp;&emsp;
-                            <input class="login100-form-btn" type="button" name="Export" value="Export" onclick="searchInfo1()">
+                          
                         </div>
                         </form>
                            
                        
                         <span id="mylocation"></span>	
+                 </div>
+     
+            <div id="page-inner"> 
 
-                        
-       
-                <!-- /. ROW  -->
-				 <%@include file="footer.jsp" %>
-				</div>
+             <%@include file="footer.jsp" %>
+            </div>
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
@@ -163,14 +152,10 @@ function searchInfo1(){
     <script src="assets/js/jquery-1.10.2.js"></script>
       <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
-      <!-- Custom Js -->
+
+ 
     <script src="assets/js/custom-scripts.js"></script>
     
- 
- 
-
 
 </body>
 </html>

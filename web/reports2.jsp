@@ -23,14 +23,91 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!-- Morris Chart Styles-->
-    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+
     <!-- Custom Styles-->
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
-    
+     <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
+    <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
+    
+    
+    <script>
+var request=new XMLHttpRequest();
+function searchInfo(){
+    var name=document.vinform.name.value;
+   
+    
+    if(name==1)
+    {
+        document.getElementById('mylocation').innerHTML="<div></div>";
+    }
+    else if(name==2)
+    {
+        try
+        {
+             var url="Report1.jsp";
+            request.onreadystatechange=function()
+            {
+                if(request.readyState==4)
+                {
+                    var val=request.responseText;
+                    document.getElementById('mylocation').innerHTML=val;
+                }
+            }
+            request.open("GET",url,true);
+            request.send();
+        }catch(e)
+        {
+            alert("Unable to connect to server");
+        }
+    }
+
+    else if(name==3)
+    {
+        try
+        {
+             var url="Report2.jsp";
+            request.onreadystatechange=function()
+            {
+                if(request.readyState==4)
+                {
+                    var val=request.responseText;
+                    document.getElementById('mylocation').innerHTML=val;
+                }
+            }
+            request.open("GET",url,true);
+            request.send();
+        }catch(e)
+        {
+            alert("Unable to connect to server");
+        }
+    }
+    
+    else 
+    {
+        try
+        {
+             var url="Report3.jsp";
+            request.onreadystatechange=function()
+            {
+                if(request.readyState==4)
+                {
+                    var val=request.responseText;
+                    document.getElementById('mylocation').innerHTML=val;
+                }
+            }
+            request.open("GET",url,true);
+            request.send();
+        }catch(e)
+        {
+            alert("Unable to connect to server");
+        }
+    }
+}
+</script>
+    
 </head>
 
 <body>
@@ -56,55 +133,62 @@
                     <li>
                         <a  href="HRdeshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-<!--                    <li>
-                        <a  href="manage_HR2.jsp"><i class="fa fa-pencil"></i> Manage HR</a>
-                         
-                    </li> -->
                     <li>
                         <a href="manage_employee2.jsp"><i class="fa fa-edit"></i> Employee</a>
                          
                     </li> 
 			
                       <li>
-                        <a href="live_activity_table2.jsp"><i class="fa fa-table"></i> Live Activity Table </a>
+                        <a href="live_activity_table2.jsp"><i class="fa fa-table"></i> Live Activity </a>
                            
                     </li> 		 
 		<li>
                         <a class="active-menu" href="reports2.jsp"><i class="glyphicon glyphicon-list-alt"></i> Reports </a>
                            
                     </li> 	
-     
+                </ul>
+            </div>
         </nav>
  
 		<div id="page-wrapper">
 		  <div class="header"> 
-                      
-                  </div>
+       
+ 
+                      <center>    
                    
-                         <div id="page-inner">
- <center>
-               
-                    <div class="dropdown">
     
-     <h3 >Reports</h3>
+                      <h3 class="page-header center-block"><center>Reports</center></h3>
+      <div class="dropdown">
      <br>
-            <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 30%">
-              <option id="1">--Select Report--</option>
-                <option id="1">All Employee Working Hour Report</option>
-             <option id="2">Late Coming Report.
+         <form name="vinform"> 
+             <select name="name" id="name" onchange="searchInfo()" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 30%">
+              <option value="1">--Select Report--</option>
+                <option value="2">All Employee Working Hour Report</option>
+             <option value="3">Late Coming Report.
 </option>
-             <option id="3">Late Staying Report.
+             <option value="4">Late Staying Report.
 </option>
             </select> 
+         </form>
+            
   
              </div>
+                      
+                     
+     
              </center>
+                      <div id="mylocation">
+                      </div>	
+                       
+                         </div>
+                    <div id="page-inner">
      <%@include file="footer.jsp" %>
             </div>		
  
         </div>
         <!-- /. PAGE WRAPPER  -->
     </div>
+            
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->
@@ -112,10 +196,11 @@
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Custom Js -->
-    <script src="assets/js/custom-scripts.js"></script>
-
-
+    
+    <script src="js/data-table/bootstrap-table.js"></script>
+    <script src="js/data-table/data-table-active.js"></script>
+    <script src="js/data-table/bootstrap-table-resizable.js"></script>
+    <script src="js/data-table/colResizable-1.5.source.js"></script>
    
  
 </body>
