@@ -44,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="HRdeshboard.jsp"><strong><i class="icon fa fa-desktop"></i> AMS</strong></a>
+                <a class="navbar-brand" href="HRdeshboard.jsp"><strong><i class="icon fa fa-desktop"></i> PRIMAVERA</strong></a>
 				
 		
             </div>
