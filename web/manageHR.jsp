@@ -62,13 +62,10 @@
                         <a  href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                    
-                    <li>
-                        <a  href="manageCompany.jsp"><i class="fa fa-pencil"></i> Company</a>
-                         
-                    </li> 
+                    
 			
                       <li>
-                          <a class="active-menu" href="manageHR.jsp"><i class="fa fa-edit"></i> HR </a>
+                          <a class="active-menu" href="#"><i class="fa fa-edit"></i> HR </a>
                            
                     </li> 		 
      
@@ -400,8 +397,7 @@
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 	 
-    <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
+ 
     
 	  <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>

@@ -60,17 +60,14 @@
                         <a  href="Super_Admin_Deshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a class="active-menu" href="SA_company.jsp"><i class="fa fa-pencil"></i>  Company</a>
+                        <a class="active-menu" href="#"><i class="fa fa-pencil"></i>  Company</a>
                          
                     </li> 
                     <li>
                         <a href="SA_admin.jsp"><i class="fa fa-pencil"></i>  Admin</a>
                          
                     </li> 
- <li>
-     <a href="SA_HR.jsp"><i class="fa fa-pencil"></i>  HR</a>
-                         
-                    </li> 
+ 
     
         </nav>
 <div id="page-wrapper">
@@ -143,12 +140,12 @@
                                                     <label>Country</label>
                                                     <input type="text" placeholder="Enter Country..." class="form-control">
                                                   </div>
-
                                                 </form>
                                               </div>
                                               <div class="modal-footer">
                                                 <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
                                                 <button type="button" class="btn btn-primary">Submit</button>
+                                                
                                               </div>
                                             </div>
                                           </div>
@@ -160,7 +157,7 @@
                                         data-cookie-id-table="saveId" data-click-to-select="true" data-toolbar="#toolbar">
                                         <thead>
                                             <tr>
-                                                <th data-field="id">ID</th>
+                                                <th data-field="id">No</th>
                                                 <th data-field="name" data-editable="true">Name</th>
                                                 <th data-field="Email" data-editable="true">Email</th>
                                                 <th data-field="Phone" data-editable="true">Phone</th>
@@ -169,152 +166,30 @@
                                         </thead>
                                         <tbody>
                                             
-                                                 <%
-//String name=request.getParameter("val");
-//try{
-//        Class.forName("com.mysql.jdbc.Driver");
-//        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/AMS","root","mysql");
-//if(name==null||name.trim().equals(""))
-//{
-//    PreparedStatement ps=con.prepareStatement("select * from AMS.manage" );
-//    ResultSet rs=ps.executeQuery();
-//
-//    if(!rs.isBeforeFirst()) 
-//    {    
-//        out.println("<p>No Record Found!</p>"); 
-//    }
-//    else
-//    {
-//   
-//        
-//        while(rs.next())
-//        {
-//out.print("<td>"+rs.getString(1)+"</td>"
-//        + "<td>"+rs.getString(2)+"</td>"
-//        + "<td>"+rs.getString(3)+"</td>"
-//        + "<td>"+rs.getString(4)+"</td>"
-//        + "<td>"+rs.getString(5)+"</td>"
-//        + "<td>"+rs.getString(6)+"</td>"
-//        + "<td class='datatable-ct'><a href='data-table.jsp?updateid="+rs.getString(1)+"'><i class='glyphicon glyphicon-pencil'></i></a> "
-//                + "&nbsp; "
-//                + "<a href='data-table.jsp?removeid="+rs.getString(1)+"'><i class='glyphicon glyphicon-remove'></i></a></td></tr>");
-//        }
-//              
-//        %>
-                      <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
+           
+                                            <% 
+                             int count1=1;
+                         for(int i=0;i<=11;i++)
+                         {
+                             %>
+                             <tr>
+                            <td><%=count1%></td>
+                            <td><a href="SA_company_Deatils.jsp?dihtm=<%=count1%>">Primavera Systems</a></td>
+                            <td><a href="SA_company_Deatils.jsp?dihtm=<%=count1%>">primavera@hda.com</a></td>
+                            <td><a href="SA_company_Deatils.jsp?dihtm=<%=count1%>">987654322</a></td> 
+                            <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
                 &nbsp;
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
-                    <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                    <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                      
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>    
-                      <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                    <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                      
-
+                             <%
+                             count1++;
+                         }
+                         %>       
+                   
+            
                                         </tbody>
                                     </table>
-        <%
-//    }
-//       
-//    }
-//}catch(Exception e)
-//    {
-//        out.print(e);
-//    }
-%>
+    
                                 </div>
                             </div>
                         </div>

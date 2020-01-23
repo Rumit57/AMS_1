@@ -11,14 +11,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.io.*"%>
 <!DOCTYPE html>
-<html >
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta content="" name="description" />
     <meta content="webthemez" name="author" />
-    <title>Admin Dashboard</title>
+    <title>Primavera Systems</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -30,8 +30,16 @@
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-  
+    <style>
+        
+        .alert {
+   width:55%;    
+}
+    </style>
 </head>
+    
+   
+
 <body>
        <!--progress-->
     <link href="css/style_1.css" rel="stylesheet">
@@ -45,7 +53,7 @@
         </div>
     </div>
     <div id="wrapper">
-        <%@include file="header1.jsp" %>
+        <%@include file="header3.jsp" %>
         
          <!--/. NAV TOP  -->
        <nav class="navbar-default navbar-side" role="navigation">
@@ -53,45 +61,46 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a class="active-menu" href="#"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a  href="Super_Admin_Deshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-                   
+                    <li>
+                        <a href="SA_company.jsp"><i class="fa fa-pencil"></i>  Company</a>
+                         
+                    </li> 
+                    <li>
+                        <a href="SA_admin.jsp"><i class="fa fa-pencil"></i>  Admin</a>
+                         
+                    </li> 
                     
 			
-                      <li>
-                          <a href="manageHR.jsp"><i class="fa fa-edit"></i> Manage HR </a>
-                           
-                    </li> 		 
-     
+                      
+                  
+                       
+
+                
         </nav>
        
-
+        
+       
       
 		<div id="page-wrapper">
 		  <div class="header"> 
                         <h1 class="page-header">
-                            Dashboard <small>Welcome : Admin </small>
+                            Profile
                         </h1>
-						<ol class="breadcrumb">
-					  <li><a href="#">Home</a></li>
-					  <li class="active">Dashboard</li>
-					 
-					</ol> 
-									
-		</div>
-            <div id="page-inner">
-
-                <!-- /. ROW  -->
-	
-
+				</div>			
+            
+                </div>   
+               
+					
+	  <div id="page-inner">
 		
                 <%@include file="footer.jsp" %>
-            </div>
-            <!-- /. PAGE INNER  -->
-        </div>
-        <!-- /. PAGE WRAPPER  -->
-    </div>
-    <!-- /. WRAPPER  -->
+          </div>
+                </div>
+          
+</div>
+    <!-- /. WRAPPER  
     <!-- JS Scripts-->
     <!-- jQuery Js -->
     <script src="assets/js/jquery-1.10.2.js"></script>
@@ -118,6 +127,6 @@
     <script type="text/javascript" src="assets/js/Chart.min.js"></script>  
     <script type="text/javascript" src="assets/js/chartjs.js"></script> 
     <script type="text/javascript" >
-
+    </script>
 </body>
 </html>

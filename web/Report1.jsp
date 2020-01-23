@@ -9,7 +9,7 @@
                     <div class="col-md-12">
                        
                    <div class="panel-body ">    
-      
+                       <form action="#" > 
                         <div class="row">
                             <div class="col-md-6 col-lg-3">
                                 <div class="card">
@@ -45,7 +45,15 @@
                             </select> 
                                 </div>
                                     </div>
+                            
+                            <div  class="col-md-12 ">
+                                <br>
+                                <center>
+                                    <submit type="button" class="btn btn-primary" name="filter" value="Filter"/>
+                                </center>
+                            </div>
                                 </div>
+                       </form>
                    </div>
                     </div>
         </div>

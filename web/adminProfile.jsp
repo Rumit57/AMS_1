@@ -50,11 +50,6 @@
                     <li>
                         <a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-                   
-                    <li>
-                        <a  href="manageCompany.jsp"><i class="fa fa-pencil"></i> Manage Company</a>
-                         
-                    </li> 
 			
                       <li>
                           <a href="manageHR.jspa"><i class="fa fa-edit"></i> Manage HR </a>

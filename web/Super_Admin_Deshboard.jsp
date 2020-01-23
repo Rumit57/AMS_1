@@ -61,7 +61,7 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a class="active-menu" href="Super_Admin_Deshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a class="active-menu" href="#"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="SA_company.jsp"><i class="fa fa-pencil"></i>  Company</a>
@@ -71,10 +71,7 @@
                         <a href="SA_admin.jsp"><i class="fa fa-pencil"></i>  Admin</a>
                          
                     </li> 
-                    <li>
-                        <a href="SA_HR.jsp"><i class="fa fa-pencil"></i>  HR</a>
-
-                    </li> 
+                    
 			
                       
                   

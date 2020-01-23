@@ -60,7 +60,7 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="HRprofile2.jsp"><i class="fa fa-user fa-fw"></i>Super Admin Profile</a>
+                        <li><a href="Super_Admin_Proflie.jsp"><i class="fa fa-user fa-fw"></i>Super Admin Profile</a>
                         </li>
                         
                         <li class="divider"></li>

@@ -78,10 +78,7 @@
                         <a class="active-menu" href="#"><i class="fa fa-pencil"></i>  Admin</a>
                          
                     </li> 
- <li>
-     <a href="SA_HR.jsp"><i class="fa fa-pencil"></i>  HR</a>
-                         
-                    </li> 
+ 
 			
                       
                   

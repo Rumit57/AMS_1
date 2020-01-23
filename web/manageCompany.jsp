@@ -60,10 +60,7 @@
                         <a  href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                    
-                    <li>
-                        <a class="active-menu" href="manageCompany.jsp"><i class="fa fa-pencil"></i> Company</a>
-                         
-                    </li> 
+                  
 			
                       <li>
                           <a href="manageHR.jsp"><i class="fa fa-edit"></i> HR </a>
@@ -93,67 +90,7 @@
                             <div class="sparkline13-graph">
                                 <div class="datatable-dashv1-list custom-datatable-overright">
                                     <div id="toolbar">
-                                        <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary"> + Add Company </button>
-                                        <!-- Modal-->
-                                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
-                                          <div role="document" class="modal-dialog">
-                                            <div class="modal-content">
-                                        <div class="modal-header">
-                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                  <center> <h4 class="modal-title">Company Registration</h4> </center>
-                                                </div>
-                                              <div class="modal-body">
-                                                  
-                                                  <form action="#">
-                                                  <div class="form-group">
-                                                    <label>Name</label>
-                                                    <input type="text" placeholder="Enter Name..." class="form-control">
-                                                  </div>
-
-                                                      <div class="form-group">
-                                                    <label>Email</label>
-                                                    <input type="text" placeholder="Enter Email..." class="form-control">
-                                                  </div>
-
-                                                      <div class="form-group">
-                                                    <label>Address 1</label>
-                                                    <input type="text" placeholder="Enter Address 1..." class="form-control">
-                                                  </div>
-
-                                                      <div class="form-group">
-                                                    <label>Address 2</label>
-                                                    <input type="text" placeholder="Enter Address 2..." class="form-control">
-                                                  </div>
-
-                                                      <div class="form-group">
-                                                    <label>Phone Number</label>
-                                                    <input type="text" placeholder="Enter Phone Number" class="form-control">
-                                                  </div>
-
-                                                      <div class="form-group">
-                                                    <label>City</label>
-                                                    <input type="text" placeholder="Enter City..." class="form-control">
-                                                  </div>
-
-                                                      <div class="form-group">
-                                                    <label>State</label>
-                                                    <input type="text" placeholder="Enter State..." class="form-control">
-                                                  </div>
-
-                                                  <div class="form-group">       
-                                                    <label>Country</label>
-                                                    <input type="text" placeholder="Enter Country..." class="form-control">
-                                                  </div>
-
-                                                </form>
-                                              </div>
-                                              <div class="modal-footer">
-                                                <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
-                                                <button type="button" class="btn btn-primary">Submit</button>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
+                                        
                                         
                                     </div>
                                     
@@ -211,94 +148,12 @@
                 &nbsp;
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
                       </tr>   
-                    <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                    <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
                       
                      <tr>
                      <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>    
-                      <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                    <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
+                     <td>Niyantras</td>
+                     <td>niyantras@hda.com</td>
+                     <td>88765432233</td>
                      <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
                 &nbsp;
                 <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>

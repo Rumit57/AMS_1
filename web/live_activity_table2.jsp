@@ -23,60 +23,13 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!-- Morris Chart Styles-->
-    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
-    <!-- Custom Styles-->
-    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+     <link href="assets/css/custom-styles.css" rel="stylesheet" />
+   
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-     <script>
-var request=new XMLHttpRequest();
-function searchInfo(){
-    var name=document.vinform.name.value;
-    var url="indexSearch.jsp?val="+name;
-    
-
-    try
-    {
-        request.onreadystatechange=function()
-        {
-            if(request.readyState==4)
-            {
-                var val=request.responseText;
-                document.getElementById('mylocation').innerHTML=val;
-            }
-        }
-        request.open("GET",url,true);
-        request.send();
-    }catch(e)
-    {
-        alert("Unable to connect to server");
-    }
-}
-
-function searchInfo1(){
-    var name=document.vinform.name.value;
-    var url="ExportData?val="+name;
-
-    try
-    {
-        request.onreadystatechange=function()
-        {
-            if(request.readyState==4)
-            {
-                var val=request.responseText;
-                document.getElementById('mylocation').innerHTML=val;
-            }
-        }
-        request.open("GET",url,true);
-        request.send();
-    }catch(e)
-    {
-        alert("Unable to connect to server");
-    }
-}
-</script>
+    <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
+    <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
 </head>
     
  
@@ -110,7 +63,7 @@ function searchInfo1(){
                     </li> 
 			
                       <li>
-                        <a class="active-menu" href="live_activity_table2.jsp"><i class="fa fa-table"></i> Live Activity </a>
+                        <a class="active-menu" href="#"><i class="fa fa-table"></i> Live Activity </a>
                            
                     </li> 		 
 		<li>
@@ -123,38 +76,115 @@ function searchInfo1(){
         </nav>
        
         <div id="page-wrapper">
-		 <div class="header"> 
-                     <h3 class="page-header">Search Employee</h3>
-                        <br>
-                            <form name="vinform" class="form-inline"  >
-                            
-                         <div class="form-group" >
-                            <input class="form-control" type="date" name="name" id="name" onfocusin="searchInfo()"/>
-                            &emsp;&emsp;&emsp;
-                            
-                          
-                        </div>
-                        </form>
-                           
+<div class="header"> 
+       <!-- Static Table Start -->
+       <div class="row">
+            <div class="col-md-12">
+        <div class="data-table-area mg-tb-15">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="sparkline13-list">
+                            <div class="sparkline13-hd">
+                                <div class="main-sparkline13-hd">
+                                    <h1>Live Activity</h1>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="sparkline13-graph">
+                                <div class="datatable-dashv1-list custom-datatable-overright">
+                                    <div id="toolbar">
+                                        
+                                    </div>
+                                    
+                                    <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true"  data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
+                                        data-cookie-id-table="saveId" data-click-to-select="true" data-toolbar="#toolbar">
+                                        <thead>
+                                            <tr>
+                                                <th data-field="id">ID</th>
+                                                <th data-field="name" data-editable="true">Name</th>
+                                                <th data-field="time" data-editable="true">Date & Time</th>
+                                                <th data-field="status" data-editable="true">Status</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                             
+                      <tr>
+                     <td>1</td>
+                     <td>XYZ</td>
+                     <td>09:00</td>
+                     <td>IN</td>
+                      </tr>   
+                      <tr>
+                     <td>2</td>
+                     <td>XYZ</td>
+                     <td>13:00</td>
+                     <td>OUT</td>
+                      </tr>   
+                      <tr>
+                     <td>3</td>
+                     <td>XYZ</td>
+                     <td>14:00</td>
+                     <td>IN</td>
+                      </tr>   
+                      <tr>
+                     <td>4</td>
+                     <td>XYZ</td>
+                     <td>19:00</td>
+                     <td>OUT</td>
+                      </tr>   
+                      
                        
-                        <span id="mylocation"></span>	
-                 </div>
-     
-            <div id="page-inner"> 
+                      
 
-             <%@include file="footer.jsp" %>
+                                        </tbody>
+                                    </table>
+        <%
+//    }
+//       
+//    }
+//}catch(Exception e)
+//    {
+//        out.print(e);
+//    }
+%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-             <!-- /. PAGE INNER  -->
-            </div>
-         <!-- /. PAGE WRAPPER  -->
         </div>
+        <!-- Static Table End -->
+                  </div> 
+       </div>
+		 	
+            
+                      
+               
+                                    
+                        
+	  <div id="page-inner">
+		
+                <%@include file="footer.jsp" %>
+          </div>
+        
+    </div>
+              
+                </div>
   
     <script src="assets/js/jquery-1.10.2.js"></script>
       <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 
- 
-    <script src="assets/js/custom-scripts.js"></script>
+ 	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+	 <script src="js/data-table/bootstrap-table.js"></script>
+    <script src="js/data-table/data-table-active.js"></script>
+    <script src="js/data-table/bootstrap-table-resizable.js"></script>
+    <script src="js/data-table/colResizable-1.5.source.js"></script>
+  
     
 
 </body>

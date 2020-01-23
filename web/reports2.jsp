@@ -143,7 +143,7 @@ function searchInfo(){
                            
                     </li> 		 
 		<li>
-                        <a class="active-menu" href="reports2.jsp"><i class="glyphicon glyphicon-list-alt"></i> Reports </a>
+                        <a class="active-menu" href="#"><i class="glyphicon glyphicon-list-alt"></i> Reports </a>
                            
                     </li> 	
                 </ul>
