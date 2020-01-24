@@ -101,7 +101,7 @@
       <div class="panel-body ">
                         <div class="row">
                             <div class="col-md-6 col-lg-3">
-                                   <a style="color: black" href="yesterday_presant.jsp">
+                                   <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #dff0d8" class="card-body">
                                         <h5 class="card-title">Present...</h5>
@@ -112,7 +112,7 @@
                             </div>
                             <!-- End Col -->
                             <div  class="col-md-6 col-lg-3">
-                                   <a style="color: black" href="yesterday_presant.jsp">
+                                   <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #f2dede" class="card-body">
                                         <h5 class="card-title">Absent...</h5>
@@ -123,7 +123,7 @@
                             </div>
                             <!-- End Col -->
                             <div class="col-md-6 col-lg-3">
-                                   <a style="color: black" href="yesterday_presant.jsp">
+                                   <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
                                         <h5 class="card-title">Late Coming...</h5>
@@ -152,7 +152,7 @@
       <div class="panel-body ">
                         <div class="row">
                             <div class="col-md-6 col-lg-3">
-                                <a style="color: black" href="yesterday_presant.jsp">
+                                <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #dff0d8" class="card-body">
                                         <h5 class="card-title">Present...</h5>
@@ -164,7 +164,7 @@
                             </div>
                             <!-- End Col -->
                             <div  class="col-md-6 col-lg-3">
-                                   <a style="color: black" href="yesterday_presant.jsp">
+                                   <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #f2dede" class="card-body">
                                         <h5 class="card-title">Absent...</h5>
@@ -175,7 +175,7 @@
                             </div>
                             <!-- End Col -->
                             <div class="col-md-6 col-lg-3">
-                                   <a style="color: black" href="yesterday_presant.jsp">
+                                   <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
                                         <h5 class="card-title">Late Coming...</h5>
@@ -186,7 +186,7 @@
                             </div>
                             <!-- End Col -->
                             <div class="col-md-6 col-lg-3">
-                                   <a style="color: black" href="yesterday_presant.jsp">
+                                   <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
                                         <h5 class="card-title">Late Staying...</h5>
@@ -197,7 +197,7 @@
                             </div>
                             <!-- End Col -->
                             <div class="col-md-6 col-lg-3">
-                                   <a style="color: black" href="yesterday_presant.jsp">
+                                   <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
                                         <h5 class="card-title">Missed Punch...</h5>
