@@ -247,12 +247,13 @@
           
           <!--modal-->
           
-          <div id="myModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+          <div id="myModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal">
                                           <div role="document" class="modal-dialog">
                                             <div class="modal-content">
                                         <div class="modal-header">
+                                            <h3 style="width:100%"><center>Update Employee Details</center> </h3>
                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                  <center> <h4 class="modal-title">Update Employee Details</h4> </center>
+                                                  
                                                 </div>
                                               <div class="modal-body">
                                                   
@@ -302,7 +303,7 @@
                                                 </form>
                                               </div>
                                               <div class="modal-footer">
-                                                <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                                                <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
                                                 <button type="button" class="btn btn-primary">Submit</button>
                                               </div>
                                             </div>

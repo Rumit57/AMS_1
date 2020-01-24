@@ -59,7 +59,7 @@
                     
 			
                       <li>
-                          <a href="manageHR.jsp"><i class="fa fa-edit"></i> Manage HR </a>
+                          <a href="manageHR.jsp"><i class="fa fa-edit"></i> HR </a>
                            
                     </li> 		 
      

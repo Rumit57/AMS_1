@@ -140,6 +140,10 @@ body {
     line-height:25px;
   padding-top:8px;
 }
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
 
 </style>
    
@@ -271,7 +275,7 @@ body {
           
           <div id="myModal" role="dialog" tabindex="-1" aria-hidden="true" class="modal" >
                
-                <div class="modal-dialog modal-dialog-scrollable" role="document" >
+                 <div class="modal-dialog modal-lg">
                                               <div class="modal-content">
                                         <div class="modal-header">
                                             
