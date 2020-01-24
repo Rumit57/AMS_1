@@ -37,9 +37,9 @@
 var request=new XMLHttpRequest();
 function searchInfo(){
     var name=document.vinform.name.value;
-   
+//   var value1=document.getElementById('selectedValue').innerHTML = vinform.name.value;
     
-    if(name==1)
+    if(name=="")
     {
         document.getElementById('mylocation').innerHTML="<div></div>";
     }
@@ -105,9 +105,14 @@ function searchInfo(){
             alert("Unable to connect to server");
         }
     }
+//    window.location.replace("reports2.jsp?mess="+value1);
 }
 </script>
-    
+    <style>
+        select[disabled]{
+              color:#aaa;
+            }
+    </style>
 </head>
 
 <body>
@@ -160,9 +165,9 @@ function searchInfo(){
                       <h3 class="page-header center-block"><center>Reports</center></h3>
       <div class="dropdown">
      <br>
-         <form name="vinform"> 
+         <form name="vinform" action="#"> 
              <select name="name" id="name" onchange="searchInfo()" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 30%">
-              <option value="1">--Select Report--</option>
+              <option value="">--Select Report--</option>
                 <option value="2">All Employee Working Hour Report</option>
              <option value="3">Late Coming Report.
 </option>
@@ -177,6 +182,9 @@ function searchInfo(){
                      
      
              </center>
+                      
+                      <!--<span id="selectedValue"></span>-->
+                      
                       <div id="mylocation">
                       </div>	
                        
@@ -195,7 +203,30 @@ function searchInfo(){
     <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       <script>
+           function chainSelect(current, target){
+        var value1 = $(current).on('change', function(){
+          if($(this).find(':selected').val() != ''){
+            $(target).removeAttr('disabled');
+            var value = $(this).find(':selected').text();
+          }else{
+            $(target).prop('disabled', 'disabled').val(null);
+          }
+        return value;
+        });
+        return value1;
+      }
+      size = chainSelect('select#size', '#color');
+      color = chainSelect('select#color', '#qty');
+      qty = chainSelect('select#qty', '#submit');
 
+      $('#addToCart').submit(function(){
+        event.preventDefault();
+        alert('Size: ' + size + '\nColor: ' + color + '\nQuantity: ' + qty);
+      });
+
+           </script>
     
     <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/data-table-active.js"></script>

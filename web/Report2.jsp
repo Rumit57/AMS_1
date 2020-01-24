@@ -2,76 +2,83 @@
 
 <html>
     <head>
+        <style>
+            
+
+            body{
+              margin:0;
+            }
+            select[disabled]{
+              color:#aaa;
+            }
+            h1{color:#563d7c;}
+        </style>
         
     </head>
     <body>
        <br>
-        <div class="row">
-                    <div class="col-md-12">
-                       
-                      
-      <div class="panel-body ">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-3">
-                                <div class="card">
-                                    <label>Employee Name</label>
-                               <input style="width: 100%" class="form-control" type="text" placeholder="Search" aria-label="Search">
+        <div class="container">
+  
+  <div class="row">
+    <div class="col-xs-3">
+      <form action="" id="addToCart">
+        <div class="form-group">
+          <select name="color" id="size" class="form-control">
+            <option value="">Size</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="X-Large">X-Large</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="color" id="color" class="form-control" disabled>
+            <option value="">Color</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="qty" id="qty" class="form-control" disabled>
+            <option value="">Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="btn btn-default" disabled><i class="glyphicon glyphicon-shopping-cart"></i> Add to Cart</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       <script>
+           function chainSelect(current, target){
+        var value1 = $(current).on('change', function(){
+          if($(this).find(':selected').val() != ''){
+            $(target).removeAttr('disabled');
+            var value = $(this).find(':selected').text();
+          }else{
+            $(target).prop('disabled', 'disabled').val(null);
+          }
+        return value;
+        });
+        return value1;
+      }
+      size = chainSelect('select#size', '#color');
+      color = chainSelect('select#color', '#qty');
+      qty = chainSelect('select#qty', '#submit');
 
-                                </div>
-                            </div>
-                             
-                            <div  class="col-md-6 col-lg-3">
-                                <div class="card">
-                                    <label>FORM</label>
-                                  <input style="width: 100%" class="form-control" type="date" placeholder="Search" aria-label="Search">
-                                </div>
-                            </div>
-                    
-                              
-                            <div  class="col-md-6 col-lg-3">
-                                <div class="card">
-                                    <label>TO</label>
-                                  <input style="width: 100%" class="form-control" type="date" placeholder="Search" aria-label="Search">
-                                </div>
-                            </div>
-                       
-                             <div  class="col-md-6 col-lg-3">
-                                <div class="card">
-                                    <label>Filter Option</label>
-                                  <select id="timezones">
-        <option value="">Select Timezone</option>
-        <option value="1">Alaska/Hawai</option>
-        <option value="2">Pacific</option>
-    </select>
-    <select id="states">
-        <option value="">Select State</option>
-        <option value="1" value="10">Alaska</option>
-        <option value="1" value="11">Hawai</option>
-        <option value="2" value="12">California</option>
-        <option value="2" value="13">Nevada</option>
-        <option value="2" value="14">Oregon</option>
-        <option value="2" value="15">Washington</option>
-    </select>
-                                </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                      </div>
-        <script >
-            $('#timezones').change(function () {
-    $('#states option').hide();
-    $('#states option[value="' + $(this).val() + '"]').show();
-});
+      $('#addToCart').submit(function(){
+        event.preventDefault();
+        alert('Size: ' + size + '\nColor: ' + color + '\nQuantity: ' + qty);
+      });
 
-
-$('#timezones-select2').change(function () {
-    $('#states-select2 option').hide();
-    $('#states-select2 option[value="' + $(this).val() + '"]').show();
-});
-
-$("#timezones-select2").select2();
-$("#states-select2").select2();
-            </script>
+           </script>
+            
     </body>
 </html>

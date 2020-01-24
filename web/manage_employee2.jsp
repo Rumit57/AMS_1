@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
     <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
     <link href="./plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
    
@@ -331,12 +333,12 @@ function(){
                               </script>
 
           
-   <script src="assets/js/jquery-1.10.2.js"></script>
+   <!--<script src="assets/js/jquery-1.10.2.js"></script>-->
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="./plugins/sweetalert/js/sweetalert.min.js"></script>
     <script src="./plugins/sweetalert/js/sweetalert.init.js"></script> 
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   
