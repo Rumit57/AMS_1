@@ -77,7 +77,48 @@
 					  <li class="active">Dashboard</li>
 					 
 					</ol> 
-									
+			  <center>
+                                    <div  class="col-md-12">
+                                        <div class="col-md-2">
+                                        </div>
+                                        <a href="manageHR.jsp"><div class="col-md-4">
+                                                 <div class="board">
+                        <div class="panel panel-primary">
+						<div class="number">
+							<h3>
+								</h3><h2>10</h2>
+								<small> No of HR</small>
+							 
+						</div>
+						<div class="icon">
+						   <i class="fa fa-users fa-5x red"></i>
+						</div>
+		 
+                        </div>
+						</div>
+                                        </div></a>
+                                        <div class="col-md-4">
+                                                 <div class="board">
+                        <div class="panel panel-primary">
+						<div class="number">
+							<h3>
+								</h3><h2>440</h2>
+								<small> No of Employee</small>
+							 
+						</div>
+						<div class="icon">
+						   <i class="fa fa-users fa-5x red"></i>
+						</div>
+		 
+                        </div>
+						</div>
+                                        </div>
+                                               <div class="col-md-2"></div>
+					
+                    </div>   
+                                </center>
+                      
+                      
 		</div>
             <div id="page-inner">
 

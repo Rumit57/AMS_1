@@ -48,9 +48,7 @@
             <option value="4">4</option>
           </select>
         </div>
-        <div class="form-group">
-          <button type="submit" id="submit" class="btn btn-default" disabled><i class="glyphicon glyphicon-shopping-cart"></i> Add to Cart</button>
-        </div>
+        
       </form>
     </div>
   </div>
