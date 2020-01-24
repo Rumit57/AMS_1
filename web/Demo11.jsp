@@ -1,8 +1,9 @@
 <%-- 
-    Document   : SA_HR
-    Created on : 20 Jan, 2020, 2:30:59 PM
-    Author     : karan
+    Document   : Demo11
+    Created on : 24 Jan, 2020, 11:33:48 AM
+    Author     : rumit
 --%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -26,6 +27,7 @@
     <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
     <!-- Custom Styles-->
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <link href="css/bootstrap.min1.css" rel="stylesheet" />
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
@@ -269,8 +271,9 @@ body {
           
           <!--modal-->
           
-          <div id="myModal" role="dialog" tabindex="-1" aria-hidden="true" class="modal" >
+          <div id="myModal" role="dialog" tabindex="-1" aria-hidden="true" class="modal fade" >
                
+    <div class="modal-dialog modal-lg">
                 <div class="modal-dialog modal-dialog-scrollable" role="document" >
                                               <div class="modal-content">
                                         <div class="modal-header">
@@ -376,6 +379,7 @@ body {
                                   </div>
                          </div>
                      </div>
+    </div>
           </div>
          
           <!--Modal End-->
