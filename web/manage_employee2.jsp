@@ -37,6 +37,10 @@
         .alert {
    width:55%;    
 }
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
     </style>
 </head>
     
@@ -118,13 +122,12 @@
                                     </div>
                                         
                                         <!-- Modal-->
-                                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+                                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal">
                                           <div role="document" class="modal-dialog">
                                             <div class="modal-content">
                                         <div class="modal-header">
+                                            <h3 style="width:100%"><center>Employee Registration</center></h3>
                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                  
-                                                  <center> <h4 class="modal-title">Employee Registration</h4> </center>
                                                 </div>
                                               <div class="modal-body">
                                                   

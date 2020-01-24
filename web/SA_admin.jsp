@@ -37,8 +37,9 @@
         .alert {
    width:55%;    
 }
-.modal-content{
-    box-sizing: border-box;
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
 }
 
 
@@ -110,12 +111,12 @@
                                     <div id="toolbar">
                                         <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary"> + Add Admin </button>
                                         <!-- Modal-->
-                                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+                                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal">
                                           <div role="document" class="modal-dialog">
                                             <div class="modal-content">
                                         <div class="modal-header">
+                                             <h3 style="width:100%"><center>Admin Registration</center></h3>
                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                  <center> <h4 class="modal-title">Admin Registration</h4> </center>
                                                 </div>
                                               <div class="modal-body">
                                                   
