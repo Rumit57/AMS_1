@@ -26,8 +26,9 @@
     <!-- Morris Chart Styles-->
 
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
-     <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
+    <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
     <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
+    <link href="./plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
    
@@ -188,7 +189,7 @@
                                         <thead>
                                             <tr>
                                                 <th data-field="state" data-checkbox="true"></th>
-                                                <th data-field="id">ID</th>
+                                                <th data-field="id">No</th>
                                                 <th data-field="name" data-editable="true">Name</th>
                                                 <th data-field="Email" data-editable="true">Email</th>
                                                 <th data-field="Phone" data-editable="true">Phone</th>
@@ -196,164 +197,33 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            
-                                                 <%
-//String name=request.getParameter("val");
-//try{
-//        Class.forName("com.mysql.jdbc.Driver");
-//        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/AMS","root","mysql");
-//if(name==null||name.trim().equals(""))
-//{
-//    PreparedStatement ps=con.prepareStatement("select * from AMS.manage" );
-//    ResultSet rs=ps.executeQuery();
-//
-//    if(!rs.isBeforeFirst()) 
-//    {    
-//        out.println("<p>No Record Found!</p>"); 
-//    }
-//    else
-//    {
-//   
-//        
-//        while(rs.next())
-//        {
-//out.print("<td>"+rs.getString(1)+"</td>"
-//        + "<td>"+rs.getString(2)+"</td>"
-//        + "<td>"+rs.getString(3)+"</td>"
-//        + "<td>"+rs.getString(4)+"</td>"
-//        + "<td>"+rs.getString(5)+"</td>"
-//        + "<td>"+rs.getString(6)+"</td>"
-//        + "<td class='datatable-ct'><a href='data-table.jsp?updateid="+rs.getString(1)+"'><i class='glyphicon glyphicon-pencil'></i></a> "
-//                + "&nbsp; "
-//                + "<a href='data-table.jsp?removeid="+rs.getString(1)+"'><i class='glyphicon glyphicon-remove'></i></a></td></tr>");
-//        }
-//              
-//        %>
-                      <tr>
-                          <td></td>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                    <tr>
-                        <td></td>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                    <tr>
-                        <td></td>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                         <td></td>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     
-                     <tr>
-                         <td></td>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                      
-                     <tr>
-                         <td></td>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>    
-                      <tr>
-                          <td></td>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                    <tr>
-                        <td></td>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                         <td></td>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                         <td></td>
-                     <td>1</td>
-                     <td>niyantras Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                     <tr>
-                         <td></td>
-                     <td>1</td>
-                     <td>Primavera Systems</td>
-                     <td>primavera@hda.com</td>
-                     <td>987654322</td>
-                     <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
-                      </tr>   
-                      
+                         
+                        <% 
+                        int count1=1;
+                        for(int i=0;i<=11;i++)
+                        {
+                             %>
+                            <tr>
+                                <td></td>
+                                <td><%=count1%></td>
+                                <td>XYZ</td>
+                                <td>xyz@gmail.com</td>
+                                <td>9876543210</td>
+                                <td class='datatable-ct'><a href='#'>
+                                    <i data-toggle="modal" data-target="#myModalone" class='glyphicon glyphicon-pencil'></i></a>
+                                    &nbsp;
+                                    <a href='#'><i onclick="sweet()" class='glyphicon glyphicon-remove'></i></a>
+                                </td>
+                            </tr>
+                            <%
+                            count1++;
+                        }
+                        %>         
+   
 
                                         </tbody>
                                     </table>
-        <%
-//    }
-//       
-//    }
-//}catch(Exception e)
-//    {
-//        out.print(e);
-//    }
-%>
+
                                 </div>
                             </div>
                         </div>
@@ -373,25 +243,104 @@
     </div>
               
                 </div>
+          
+          
+          <!--modal-->
+          
+          <div id="myModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+                                          <div role="document" class="modal-dialog">
+                                            <div class="modal-content">
+                                        <div class="modal-header">
+                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                  <center> <h4 class="modal-title">Update Employee Details</h4> </center>
+                                                </div>
+                                              <div class="modal-body">
+                                                  
+                                                  <form action="#">
+                                                  <div class="form-group">
+                                                    <label>First Name</label>
+                                                    <input type="text" placeholder="Enter Name..." class="form-control">
+                                                  </div>
+
+                                                      <div class="form-group">
+                                                          <label>Last Name</label> 
+                                                    <input type="text"  placeholder="Enter Email..." class="form-control">
+                                                  </div>
+
+                                                      <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input type="text" placeholder="Enter Password.." class="form-control">
+                                                  </div>
+
+                                                      <div class="form-group">
+                                                    <label>Mobile Number</label>
+                                                    <input type="text" placeholder="Enter Confirm Password..." class="form-control">
+                                                  </div>
+
+                                                      <div class="form-group">
+                                                          <label>User Type</label><br>
+                                                     <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%">
+              <option id="1">--Select User Type--</option>
+                <option id="1">Employee</option>
+             <option id="2">Intern
+</option>
+             
+            </select> 
+                                                  </div>
+
+                                                      <div class="form-group">
+                                                          <label>Status</label><br>
+                                                     <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%">
+              <option id="1">--Select Status--</option>
+                <option id="1">Active</option>
+             <option id="2">In-Active.
+</option>
+             <option id="3">Delete.
+</option>
+            </select> 
+                                                
+                                                </form>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                                                <button type="button" class="btn btn-primary">Submit</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+          
+             <script type="text/javascript">
+                                  function sweet(){
+                                      swal({
+  title: "Are you sure?",
+  text: "Your will not be able to recover this imaginary file!",
+  type: "warning",
+  showCancelButton: true,
+  confirmButtonClass: "btn-danger",
+  confirmButtonText: "Yes, delete it!",
+  closeOnConfirm: false
+},
+function(){
+  swal("Deleted!", "Your imaginary file has been deleted.", "success");
+});
+                                  };
+                              </script>
 
           
    <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
-	 
- 
-    
-	  <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="./plugins/sweetalert/js/sweetalert.min.js"></script>
+    <script src="./plugins/sweetalert/js/sweetalert.init.js"></script> 
+    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   
      <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/tableExport.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
-    <!--<script src="js/data-table/bootstrap-table-editable.js"></script>-->
     <script src="js/data-table/bootstrap-editable.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
-    
     <script src="js/data-table/bootstrap-table-export.js"></script>
   
 </body>

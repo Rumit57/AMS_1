@@ -40,8 +40,8 @@
                                   <select id="filter" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%">
                 <option  id="select">--Select--</option>
                 <option id="weekly">Weekly</option>
-                <option id="monthly">Monthly.</option>
-                <option id="yearly">Yearly.</option>
+                <option id="monthly">Monthly</option>
+                <option id="yearly">Yearly</option>
                             </select> 
                                 </div>
                                     </div>
@@ -49,7 +49,7 @@
                             <div  class="col-md-12 ">
                                 <br>
                                 <center>
-                                    <submit type="button" class="btn btn-primary" name="filter" value="Filter"/>
+                                    <button type="submit" class="btn btn-primary" name="filter">Filter</button>
                                 </center>
                             </div>
                                 </div>
