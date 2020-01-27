@@ -55,12 +55,8 @@
                     <li>
                         <a class="active-menu" href="#"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-                   
-                    
-			
-                      <li>
-                          <a href="manageHR.jsp"><i class="fa fa-edit"></i> HR </a>
-                           
+                    <li>
+                        <a href="manageHR.jsp"><i class="fa fa-edit"></i> HR </a>
                     </li> 		 
      
         </nav>

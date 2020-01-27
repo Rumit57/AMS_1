@@ -71,13 +71,7 @@
                         <a href="SA_admin.jsp"><i class="fa fa-pencil"></i>  Admin</a>
                          
                     </li> 
-                    
-			
-                      
-                  
-                       
-
-                
+            
         </nav>
        
         
