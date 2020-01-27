@@ -37,6 +37,8 @@
     max-height: calc(100vh - 210px);
     overflow-y: auto;
 }
+
+
     </style>
 </head>
     
@@ -406,6 +408,7 @@
 	  <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/app.min.js"></script>
   
 	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
 	 <script src="js/data-table/bootstrap-table.js"></script>

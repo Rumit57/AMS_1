@@ -93,7 +93,7 @@
 	
           <div class="row">
                     <div class="col-12">
-                        <div class="panel panel-default">
+                        
   <div class="panel panel-default">
                        <div class="panel-heading">
 				 Today Summary
@@ -104,7 +104,7 @@
                                    <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #dff0d8" class="card-body">
-                                        <h5 class="card-title">Present...</h5>
+                                        <h5 class="card-title">Present</h5>
                                         <p class="card-text">250 !</p>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@
                                    <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #f2dede" class="card-body">
-                                        <h5 class="card-title">Absent...</h5>
+                                        <h5 class="card-title">Absent</h5>
                                         <p class="card-text">20 !</p>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
                                    <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
-                                        <h5 class="card-title">Late Coming...</h5>
+                                        <h5 class="card-title">Late Coming</h5>
                                         <p class="card-text">10 !</p>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@
                         <!-- End Col -->
                     </div>
                     </div>
-                    </div>
+                   
                 </div>
           </div>  
                         <div class="row">
@@ -155,7 +155,7 @@
                                 <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #dff0d8" class="card-body">
-                                        <h5 class="card-title">Present...</h5>
+                                        <h5 class="card-title">Present</h5>
                                         <p class="card-text">250 !</p>
                                     </div>
                                 </div>
@@ -167,7 +167,7 @@
                                    <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #f2dede" class="card-body">
-                                        <h5 class="card-title">Absent...</h5>
+                                        <h5 class="card-title">Absent</h5>
                                         <p class="card-text">20 !</p>
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@
                                    <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
-                                        <h5 class="card-title">Late Coming...</h5>
+                                        <h5 class="card-title">Late Coming</h5>
                                         <p class="card-text">10 !</p>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@
                                    <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
-                                        <h5 class="card-title">Late Staying...</h5>
+                                        <h5 class="card-title">Late Staying</h5>
                                         <p class="card-text">25 !</p>
                                     </div>
                                 </div>
@@ -200,12 +200,12 @@
                                    <a style="color: black" href="yesterday_present.jsp">
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
-                                        <h5 class="card-title">Missed Punch...</h5>
+                                        <h5 class="card-title">Missed Punch</h5>
                                         <p class="card-text">5 !</p>
                                     </div>
                                 </div>
                                    </a>
-                            </div>``
+                            </div>
                             <!-- End Col -->
 
                         </div>
