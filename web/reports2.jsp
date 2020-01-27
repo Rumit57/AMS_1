@@ -40,7 +40,7 @@
     <body onload="reportrange()">
        <!--progress-->
     <link href="css/style_1.css" rel="stylesheet">
-    <script src="js/common.min.js"></script>
+    <!--<script src="js/common.min.js"></script>-->
     <script src="js/custom.min.js"></script>
     <div id="preloader">
         <div class="loader">
@@ -95,13 +95,6 @@
              <option value="3">Late Staying Report.</option>
             </select> 
         
-             <div class="card">
-                                    <label>Date</label>
-                                    <i class="fa fa-calendar" ></i>&nbsp;
-                                <span ></span> <i class="fa fa-caret-down"></i><input id="reportrange" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 20%"/>
-                                
-                                   
-                                </div>
                       </center>
                      
                       
