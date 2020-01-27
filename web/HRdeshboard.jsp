@@ -83,13 +83,12 @@
             </div>
        </nav>
        
-     
-       
+
 		<div id="page-wrapper">
 		  <div class="header"> 
-                        <h3 class="page-header">
+                        <h1 class="page-header">
                             Dashboard <small>Welcome HR  </small>
-                        </h3>
+                        </h1>
 	
           <div class="row">
                     <div class="col-12">
