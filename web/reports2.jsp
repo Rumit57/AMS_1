@@ -31,9 +31,9 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
-<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+<script src="js/chosen.jquery.js"></script>
+<link href="css/chosen.css" rel="stylesheet"/>
   
    
     
@@ -115,8 +115,9 @@
                             <div class="col-md-6 col-lg-3">
                                 <div class="card">
                                     <label>Employee Name</label>
-                               <select data-placeholder="Begin typing a name to filter..." multiple class="chosen-select" name="test">
-                            <option value=""></option>
+                                    <br>
+                                        <select style="width:100%" data-placeholder="Search" multiple class="chosen-select" name="test">
+                            <option value="select"></option>
                             <option>Rumit</option>
                             <option>Karan</option>
                             <option>Raj</option>
@@ -247,7 +248,7 @@
                                     
                                     
                                     <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true"  data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
-                                        data-cookie-id-table="saveId" data-click-to-select="true" data-toolbar="#toolbar">
+                                        data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true"  data-toolbar="#toolbar">
                                         <thead>
                                            <tr>
                         <th data-field="id">No</th>
@@ -414,11 +415,13 @@ function reportrange(){
         </script> 
     
     
-
+    <script src="js/data-table/tableExport.js"></script>
     <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
     <script src="js/data-table/colResizable-1.5.source.js"></script>
+    <script src="js/data-table/bootstrap-table-export.js"></script>
+
    
  
 </body>

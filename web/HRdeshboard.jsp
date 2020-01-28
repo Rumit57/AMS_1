@@ -104,7 +104,7 @@
                                 <div class="card">
                                     <div style="background-color: #dff0d8" class="card-body">
                                         <h5 class="card-title">Present</h5>
-                                        <p class="card-text">250 !</p>
+                                        <p class="card-text">250 </p>
                                     </div>
                                 </div>
                                    </a>
@@ -115,7 +115,7 @@
                                 <div class="card">
                                     <div style="background-color: #f2dede" class="card-body">
                                         <h5 class="card-title">Absent</h5>
-                                        <p class="card-text">20 !</p>
+                                        <p class="card-text">20 </p>
                                     </div>
                                 </div>
                                    </a>
@@ -126,7 +126,7 @@
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
                                         <h5 class="card-title">Late Coming</h5>
-                                        <p class="card-text">10 !</p>
+                                        <p class="card-text">10 </p>
                                     </div>
                                 </div>
                                    </a>
@@ -155,7 +155,7 @@
                                 <div class="card">
                                     <div style="background-color: #dff0d8" class="card-body">
                                         <h5 class="card-title">Present</h5>
-                                        <p class="card-text">250 !</p>
+                                        <p class="card-text">250 </p>
                                     </div>
                                 </div>
                                     </a>
@@ -167,7 +167,7 @@
                                 <div class="card">
                                     <div style="background-color: #f2dede" class="card-body">
                                         <h5 class="card-title">Absent</h5>
-                                        <p class="card-text">20 !</p>
+                                        <p class="card-text">20 </p>
                                     </div>
                                 </div>
                                    </a>
@@ -178,7 +178,7 @@
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
                                         <h5 class="card-title">Late Coming</h5>
-                                        <p class="card-text">10 !</p>
+                                        <p class="card-text">10 </p>
                                     </div>
                                 </div>
                                    </a>
@@ -189,7 +189,7 @@
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
                                         <h5 class="card-title">Late Staying</h5>
-                                        <p class="card-text">25 !</p>
+                                        <p class="card-text">25 </p>
                                     </div>
                                 </div>
                                    </a>
@@ -200,7 +200,7 @@
                                 <div class="card">
                                     <div style="background-color: #d9edf7" class="card-body" >
                                         <h5 class="card-title">Missed Punch</h5>
-                                        <p class="card-text">5 !</p>
+                                        <p class="card-text">5 </p>
                                     </div>
                                 </div>
                                    </a>

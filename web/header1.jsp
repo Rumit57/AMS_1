@@ -64,8 +64,8 @@
                         </li>
                         <li><a href="manageCompany.jsp"><i class="fa fa-user fa-fw"></i> Company Profile</a>
                         </li>
-                       
-                        <li class="divider"></li>
+                        <li><a href="changepasswordadmin.jsp"><i class="fa fa-edit fa-fw"></i> Change Password</a>
+                        </li> <li class="divider"></li>
                         <li><a href="Logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>

@@ -93,7 +93,7 @@
 						<div class="number">
 							<h3>
 								</h3><h3>440</h3>
-								<small> Ragistered Company</small>
+								<small> Company</small>
 							 
 						</div>
 						<div class="icon">
@@ -110,7 +110,7 @@
 						<div class="number">
 							<h3>
 								</h3><h3>440</h3>
-								<small> Company wise Admin</small>
+								<small> Admin</small>
 							 
 						</div>
 						<div class="icon">
@@ -127,7 +127,7 @@
 						<div class="number">
 							<h3>
 								</h3><h3>440</h3>
-								<small> Company wise HR</small>
+								<small> HR</small>
 							 
 						</div>
 						<div class="icon">

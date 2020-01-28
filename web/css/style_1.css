@@ -2845,12 +2845,12 @@ ul.mailbox-list li a, ul.h-list li a {
     font-weight: 600;
     font-size: 14px;
 }
-.panel-body a {
+/*.panel-body a {
     font-size: 14px;
     color: #444;
     margin-top: 15px;
 	transition:all .4s ease 0s
-}
+}*/
 .contact-footer, .panel-footer {
     background: #ddd;
 }
@@ -2963,11 +2963,11 @@ ul.mailbox-list li:hover a, ul.h-list li:hover a {
     margin-left: 2px;
     margin-bottom: 4px;
 }
-.panel-body a {
+/*.panel-body a {
     font-size: 14px;
     color: #444;
     margin-top: 15px;
-}
+}*/
 .project-value h2 {
     font-size: 25px;
     color: #444;

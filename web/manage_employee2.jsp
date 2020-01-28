@@ -214,10 +214,20 @@
                                 <td>XYZ</td>
                                 <td>xyz@gmail.com</td>
                                 <td>9876543210</td>
-                                <td class='datatable-ct'><a href='#'>
-                                    <i data-toggle="modal" data-target="#myModalone" class='glyphicon glyphicon-pencil'></i></a>
-                                    &nbsp;
-                                    <a href='#'><i onclick="sweet()" class='glyphicon glyphicon-remove'></i></a>
+                                
+                                <td >
+                                    <center>
+                                    <div class="dropdown">
+                                            <div data-toggle="dropdown"><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            
+                                                <ul class="dropdown-menu">
+                                                    <li><a  href="#" data-toggle="modal" data-target="#myModalone" ><i class='glyphicon glyphicon-pencil'></i>&nbsp;&nbsp;Edit</a></li> 
+                                                    <li class="divider"></li>
+                                                    <li><a  href="#" onclick="sweet()"><i  class='glyphicon glyphicon-remove'></i>&nbsp;&nbsp;Delete</a></li> 
+                                                </ul>
+                                        </div>
+                                    </center>
                                 </td>
                             </tr>
                             <%

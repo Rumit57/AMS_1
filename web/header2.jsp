@@ -62,9 +62,11 @@
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="HRprofile2.jsp"><i class="fa fa-user fa-fw"></i> HR Profile</a>
                         </li>
-                        <li class="divider"></li>
+                        <li><a href="changepasswordHR.jsp"><i class="fa fa-edit fa-fw"></i> Change Password</a>
+                        </li><li class="divider"></li>
                         <li><a href="Logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
+                        
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>
