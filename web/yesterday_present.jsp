@@ -273,7 +273,7 @@ body {
           
           <!--modal-->
           
-          <div id="myModal" role="dialog" tabindex="-1" aria-hidden="true" class="modal" >
+          <div id="myModal" role="dialog" tabindex="-1" aria-hidden="true" class="modal" data-backdrop="static">
                
                  <div class="modal-dialog modal-lg">
                                               <div class="modal-content">

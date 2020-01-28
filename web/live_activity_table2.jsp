@@ -77,20 +77,15 @@
        
         <div id="page-wrapper">
 <div class="header"> 
+    <h1 class="page-header">
+                            Live Activity
+                        </h1>
        <!-- Static Table Start -->
-       <div class="row">
-            <div class="col-md-12">
-        <div class="data-table-area mg-tb-15">
-            <div class="container-fluid">
+      
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="sparkline13-list">
-                            <div class="sparkline13-hd">
-                                <div class="main-sparkline13-hd">
-                                    <h1>Live Activity</h1>
-                                    <br>
-                                </div>
-                            </div>
+                            
                             <div class="sparkline13-graph">
                                 <div class="datatable-dashv1-list custom-datatable-overright">
                                     <div id="toolbar">
@@ -155,16 +150,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Static Table End -->
-                  </div> 
-       </div>
+          
 		 	
-            
-                      
-               
-                                    
+                                
                         
 	  <div id="page-inner">
 		

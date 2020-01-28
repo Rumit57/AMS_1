@@ -91,7 +91,7 @@
 		<div id="page-wrapper">
 		  <div class="header"> 
                         <h1 class="page-header">
-                            Employee Details <small>Welcome  </small>
+                            Employee Details 
                         </h1>
 						<ol class="breadcrumb">
 					  <li><a href="#">Home</a></li>
@@ -124,7 +124,7 @@
                                     </div>
                                         
                                         <!-- Modal-->
-                                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal">
+                                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal" data-backdrop="static">
                                           <div role="document" class="modal-dialog">
                                             <div class="modal-content">
                                         <div class="modal-header">
@@ -252,7 +252,7 @@
           
           <!--modal-->
           
-          <div id="myModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal">
+          <div id="myModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal" data-backdrop="static">
                                           <div role="document" class="modal-dialog">
                                             <div class="modal-content">
                                         <div class="modal-header">

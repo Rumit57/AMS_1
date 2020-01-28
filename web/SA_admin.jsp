@@ -80,11 +80,6 @@
                          
                     </li> 
  
-			
-                      
-                  
-                       
-
                 
         </nav>
        
@@ -92,26 +87,19 @@
        
      <div id="page-wrapper">
 <div class="header"> 
+    <h1 class="page-header">Admin Data</h1>
        <!-- Static Table Start -->
-       <div class="row">
-            <div class="col-md-12">
-        <div class="data-table-area mg-tb-15">
-            <div class="container-fluid">
+       
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="sparkline13-list">
-                            <div class="sparkline13-hd">
-                                <div class="main-sparkline13-hd">
-                                    <h1>Admin Data</h1>
-                                    <br>
-                                </div>
-                            </div>
+                            
                             <div class="sparkline13-graph">
                                 <div class="datatable-dashv1-list custom-datatable-overright">
                                     <div id="toolbar">
                                         <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary"> + Add Admin </button>
                                         <!-- Modal-->
-                                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal">
+                                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal" data-backdrop="static">
                                           <div role="document" class="modal-dialog">
                                             <div class="modal-content">
                                         <div class="modal-header">
@@ -388,11 +376,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Static Table End -->
-                  </div> 
        </div>
 
 </div>
@@ -401,6 +384,7 @@
                 <%@include file="footer.jsp" %>
             </div>
    </div>
+</div>
     <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>

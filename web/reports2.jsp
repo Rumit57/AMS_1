@@ -31,7 +31,9 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
   
    
     
@@ -88,7 +90,7 @@
       
      <br>
 
-             <select  class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 30%">
+             <select  class="form-control" style="width: 30%">
               <option value="0">--Select Report--</option>
                 <option value="1">All Employee Working Hour Report</option>
              <option value="2">Late Coming Report.</option>
@@ -102,7 +104,8 @@
         <div> 
              <!--report 1-->
             <div class="1 GFG"  > 
-              <strong>Report 1</strong>  
+              <!--<strong>Report 1</strong>-->  
+              <br>
               <div class="row">
                     <div class="col-md-12">
                        
@@ -112,8 +115,18 @@
                             <div class="col-md-6 col-lg-3">
                                 <div class="card">
                                     <label>Employee Name</label>
-                               <input style="width: 100%" class="form-control" type="text" placeholder="Search" aria-label="Search">
-
+                               <select data-placeholder="Begin typing a name to filter..." multiple class="chosen-select" name="test">
+                            <option value=""></option>
+                            <option>Rumit</option>
+                            <option>Karan</option>
+                            <option>Raj</option>
+                            <option>Brijesh</option>
+                          </select>
+                                    <script>
+                                        $(".chosen-select").chosen({
+                                            no_results_text: "Oops, nothing found!"
+                                          });
+                                        </script>
                                 </div>
                             </div>
                              
@@ -131,31 +144,40 @@
                               <div  class="col-md-6 col-lg-3">
                                 <div class="card">
                                     <label>Filter Option</label>
-                                  <select id="filter" name="filter" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%">
+                                  <select id="filter" name="filter" class="form-control" style="width: 100%">
                             <option  value="filter">--Select--</option>
-                            <option value="weekly">Weekly</option>
+                            <!--<option value="weekly">Weekly</option>-->
                             <option value="monthly">Monthly</option>
                             <option value="yearly">Yearly</option>
                             </select> 
                                 </div>
                               </div>
                                    <div  class="col-md-6 col-lg-3">
-                                <div class="card"> 
-                                    <div class="form-group" id="hideDropdown">
+                                <div class="card" > 
+                                    <div  id="hideDropdown">
                                     <label>Select Month</label>
-                                        <select id="month" class="form-control" disabled>
+                                    <select id="month" style="width:50%" class="form-control" disabled>
                               <option value="01">Jan</option>
                               <option value="02">Feb</option>
                               <option value="03">Mar</option>
+                              <option value="04">Apr</option>
+                              <option value="05">May</option>
+                              <option value="06">Jun</option>
+                              <option value="07">Jul</option>
+                              <option value="08">Aug</option>
+                              <option value="09">Sep</option>
+                              <option value="10">Oct</option>
+                              <option value="11">Nov</option>
+                              <option value="12">Dec</option>
                             </select>
                           </div>
                                 </div>
                                    </div>
                                      <div  class="col-md-6 col-lg-3">
                                 <div class="card"> 
-                                    <div class="form-group" id="hideDropdown1">
+                                    <div  id="hideDropdown1">
                                         <label>Select Year</label>
-                             <select  id="year" class="form-control" disabled>
+                             <select  id="year" style="width:50%" class="form-control" disabled>
                               <option value="2020">2020</option>
                               <option value="2019">2019</option>
                               <option value="2018">2018</option>
@@ -197,8 +219,32 @@
                           
                                 <div class="datatable-dashv1-list custom-datatable-overright">
                                     <div id="toolbar">
-                                        
+                                        <button  type="button" onclick="pdf()" class="btn btn-primary"> Dowanload PDF </button>
+                                        <script>
+                                            var request=new XMLHttpRequest();
+                                            function pdf(){
+
+                                                var url="ITextTest.jsp";
+                                                try
+                                                {
+                                                    request.onreadystatechange=function()
+                                                    {
+                                                        if(request.readyState==4)
+                                                        {
+                                                            var val=request.responseText;
+                                                            document.getElementById('mylocation').innerHTML=val;
+                                                        }
+                                                    }
+                                                    request.open("GET",url,true);
+                                                    request.send();
+                                                }catch(e)
+                                                {
+                                                    alert("Unable to connect to server");
+                                                }
+                                            }
+                                            </script>
                                     </div>
+                                    
                                     
                                     <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true"  data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
                                         data-cookie-id-table="saveId" data-click-to-select="true" data-toolbar="#toolbar">
