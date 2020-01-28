@@ -117,7 +117,7 @@
                                     <label>Employee Name</label>
                                     <br>
                                         <select style="width:100%" data-placeholder="Search" multiple class="chosen-select" name="test">
-                            <option value="select"></option>
+                            
                             <option>Rumit</option>
                             <option>Karan</option>
                             <option>Raj</option>
