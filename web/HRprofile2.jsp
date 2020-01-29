@@ -222,7 +222,7 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <input type="submit" class="profile-edit-btn1" name="btnAddMore" value="Edit Profile"/>
+                        <input type="submit" class="profile-edit-btn1" onclick="edit()" id="edit" value="Edit Profile"/>
                     </div>
                 </div>
                 <div class="row">
@@ -243,12 +243,15 @@
                     <div class="col-md-8">
                         <div class="tab-content profile-tab1">
                            
+                                      <form action="#" >
+                                
+                            
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <label>User Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
                                             </div>
                                             <div class="col-md-4">
-                                                <p>Karan123</p>
+                                                <p id="user_id">Karan123</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -256,7 +259,7 @@
                                                 <label>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
                                             </div>
                                             <div class="col-md-4">
-                                                <p>Karan Jayswal</p>
+                                                <p id="name">Karan Jayswal</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -264,7 +267,7 @@
                                                 <label>Email  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
                                             </div>
                                             <div class="col-md-4">
-                                                <p>karanjayswal@gmail.com</p>
+                                                <p id="email">karanjayswal@gmail.com</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -272,7 +275,7 @@
                                                 <label>Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
                                             </div>
                                             <div class="col-md-4">
-                                                <p>123 456 7890</p>
+                                                <p id="phone">123 456 7890</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -280,7 +283,7 @@
                                                 <label>Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
                                             </div>
                                             <div class="col-md-4">
-                                                <p>1947,Chamunda Nagar,Ghelkhadi,Vijalpor</p>
+                                                <p id="add">1947,Chamunda Nagar,Ghelkhadi,Vijalpor</p>
                                             </div>
                                         </div>
                             <div class="row">
@@ -288,7 +291,7 @@
                                                 <label>City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
                                             </div>
                                             <div class="col-md-4">
-                                                <p>Navsari</p>
+                                                <p id="city">Navsari</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -296,7 +299,7 @@
                                                 <label>State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
                                             </div>
                                             <div class="col-md-4">
-                                                <p>Gujarat</p>
+                                                <p id="state">Gujarat</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -304,10 +307,20 @@
                                                 <label>Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:- </label>
                                             </div>
                                             <div class="col-md-4">
-                                                <p>India</p>
+                                                <p id="country">India</p>
                                             </div>
                                         </div>
-                                       
+                            
+                                            <div class="row">
+                                            <div class="col-md-8">
+                                                <center>
+                                                    <button type="submit" id="update" class="btn btn-primary"  name="update" style="width:20%;visibility: hidden">Update</button>
+                                                </center>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                            </form>
                             </div>
                         </div>
                     </div>
@@ -344,26 +357,31 @@
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 	 
-    <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
-    <!-- Morris Chart Js -->
-    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
-    <script src="assets/js/morris/morris.js"></script>
-	
-	
-	<script src="assets/js/easypiechart.js"></script>
-	<script src="assets/js/easypiechart-data.js"></script>
-	
-	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
-	
-    <!-- Custom Js -->
-    <script src="assets/js/custom-scripts.js"></script>
-
-     
-    <!-- Chart Js -->
-    <script type="text/javascript" src="assets/js/Chart.min.js"></script>  
-    <script type="text/javascript" src="assets/js/chartjs.js"></script> 
-    <script type="text/javascript" >
+   <script>
+        function edit()
+        {
+            var user_id1=document.getElementById("user_id").textContent;
+            document.getElementById("user_id").innerHTML = "<input type='text'  class='form-control' name='user_id' id='user_id' placeholder='enter username' value="+user_id1+" >";
+            var name=document.getElementById("name").textContent;
+            document.getElementById("name").innerHTML = "<input type='text' ' class='form-control' name='name' id='name' placeholder='enter name' value="+name+" >";
+            var email=document.getElementById("email").textContent;
+            document.getElementById("email").innerHTML = "<input type='email' class='form-control' name='email' id='email' placeholder='enter Email' value="+email+" >";
+            var phone=document.getElementById("phone").textContent;
+            document.getElementById("phone").innerHTML = "<input type='text'  class='form-control' name='phone' id='phone' placeholder='enter phone number' value="+phone+" >";
+            var address=document.getElementById("add").textContent;
+            document.getElementById("add").innerHTML = "<input type='text'  class='form-control' name='address' id='address' placeholder='enter address' value="+address+" >";
+            var city=document.getElementById("city").textContent;
+            document.getElementById("city").innerHTML = "<input type='text'  class='form-control' name='city' id='city' placeholder='enter city' value="+city+" >";
+            var state=document.getElementById("state").textContent;
+            document.getElementById("state").innerHTML = "<input type='text'  class='form-control' name='state' id='state' placeholder='enter state' value="+state+" >";
+            var country=document.getElementById("country").textContent;
+            document.getElementById("country").innerHTML = "<input type='text' class='form-control' name='country' id='country' placeholder='enter country' value="+country+" >";
+            document.getElementById("update").style.visibility = "visible";
+            document.getElementById("edit").style.visibility = "hidden";
+            
+        }
+        
+    </script>
 
 </body>
 </html>

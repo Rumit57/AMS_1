@@ -93,8 +93,8 @@
              <select  class="form-control" style="width: 30%">
               <option value="0">--Select Report--</option>
                 <option value="1">All Employee Working Hour Report</option>
-             <option value="2">Late Coming Report.</option>
-             <option value="3">Late Staying Report.</option>
+             <option value="2">Late Coming Report</option>
+             <option value="3">Late Staying Report</option>
             </select> 
         
                       </center>

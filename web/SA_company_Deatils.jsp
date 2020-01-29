@@ -84,12 +84,6 @@
   		<div class="col-sm-3"><!--left col-->
               
 
-<!--      <div class="text-center">
-          <img src="logo.png" alt="avatar">
-        <h6>Upload a different photo...</h6>
-        <input type="file" class="text-center center-block file-upload">
-      </div></hr><br>-->
-
                 <div style="border-style: solid">
                     <img src="images.png" class="img-thumbnail" max-width="-webkit-fill-available" max-height="-webkit-fill-available" alt=""/>
                      
@@ -100,7 +94,7 @@
       
         </div><!--/col-3-->
         
-        <input style="margin-right: 15px"  type="submit" class="btn btn-primary pull-right" value="Edit Details"/>
+        <input style="margin-right: 15px;visibility: visible" onclick="edit()" id="edit" type="submit" class="btn btn-primary pull-right" value="Edit Details"/>
         <br>
     	<div class="col-sm-9">
             
@@ -110,12 +104,12 @@
                  
             <div class="tab-pane active" id="home">
                 <hr>
-                  <form class="form" action="##" method="post" id="registrationForm">
+                  <form class="form" action="#" method="post" id="registrationForm">
                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                              <label for="first_name"><h4>Company name</h4></label>
-                              <input type="text" readonly class="form-control" name="first_name" id="first_name" placeholder="first name" value="Primavera System">
+                              <label for="company_name"><h4>Company name</h4></label>
+                              <input type="text" readonly class="form-control" name="company_name" id="company_name" placeholder="company name" value="Primavera System">
                           </div>
                       </div>
                       <div class="form-group">
@@ -125,8 +119,8 @@
                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                              <label for="staticphn"><h4>Phone</h4></label>
-                              <input type="text" id="staticphn" readonly class="form-control" name="phone" id="phone" placeholder="enter phone" value="8866340644">
+                              <label for="Phone"><h4>Phone</h4></label>
+                              <input type="text" id="phone" readonly class="form-control" name="phone" id="phone" placeholder="enter phone number" value="8866340644">
                           </div>
                       </div>
           
@@ -147,49 +141,57 @@
                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                              <label for="text"><h4>Address</h4></label>
-                              <input type="text" class="form-control" readonly name="password" id="password" value="301,Alkananda Complax,Akota Road">
+                              <label for="Address"><h4>Address</h4></label>
+                              <input type="text" class="form-control" readonly name="Address" id="address" value="301,Alkananda Complax,Akota Road">
                           </div>
                       </div>
                         <div class="form-group">
                           
                           <div class="col-xs-6">
-                              <label for="text"><h4>City</h4></label>
-                              <input type="email" class="form-control" readonly id="location" value="Vodadra">
+                              <label for="City"><h4>City</h4></label>
+                              <input type="text" class="form-control" readonly id="city" name="City" value="Vodadra">
                           </div>
                       </div>
                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                            <label for="text"><h4>State</h4></label>
-                            <input type="text" class="form-control" readonly name="password2" id="password2" value="Gujarat">
+                            <label for="State"><h4>State</h4></label>
+                            <input type="text" class="form-control" readonly name="State" id="state" value="Gujarat">
                           </div>
                       </div>
                        <div class="form-group">
                           
                           <div class="col-xs-6">
-                            <label for="text"><h4>Conutry</h4></label>
-                            <input type="text" class="form-control" readonly name="password2" id="password2" value="India">
+                            <label for="Conutry"><h4>Conutry</h4></label>
+                            <input type="text" class="form-control" readonly name="Conutry" id="conutry" value="India">
                           </div>
                       </div>
                      <div class="form-group">
                           
                           <div class="col-xs-6">
-                            <label for="text"><h4>Admin</h4></label>
-                            <input type="text" class="form-control" readonly name="password2" id="password2" value="Ninad Shah">
+                            <label for="Admin"><h4>Admin</h4></label>
+                            <input type="text" class="form-control" readonly name="Admin" id="admin" value="Ninad Shah">
                           </div>
                       </div>
                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                            <label for="text"><h4>Admin phone number</h4></label>
-                            <input type="text" class="form-control" readonly name="password2" id="password2" value="8866291338">
+                            <label for="Admin_phone"><h4>Admin phone number</h4></label>
+                            <input type="text" class="form-control" readonly name="Admin_phone" id="admin_phone" value="8866291338">
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                          
+                          <div class="col-xs-12">
+                              <br>
+                              <center>
+                              <button type="submit" style="width: 20%;visibility: hidden" class="btn btn-primary"  name="update" id="update" value="8866291338">Update</button>
+                              </center>
                           </div>
                       </div>
                       
               	</form>
-              
-              <hr>
               
              </div><!--/tab-pane-->
            
@@ -202,17 +204,7 @@
 </div>
                                        </div>
        </div>               
-                         
-                 
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
+        
             <div id="page-inner">
 
                 <!-- /. ROW  -->
@@ -232,26 +224,24 @@
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 	 
-    <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
-    <!-- Morris Chart Js -->
-    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
-    <script src="assets/js/morris/morris.js"></script>
-	
-	
-	<script src="assets/js/easypiechart.js"></script>
-	<script src="assets/js/easypiechart-data.js"></script>
-	
-	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
-	
-    <!-- Custom Js -->
-    <script src="assets/js/custom-scripts.js"></script>
+    <script>
+        function edit()
+        {
+            document.getElementById("company_name").readOnly = false;
+            document.getElementById("phone").readOnly = false;
+            document.getElementById("mobile").readOnly = false;
+            document.getElementById("email").readOnly = false;
+            document.getElementById("address").readOnly = false;
+            document.getElementById("city").readOnly = false;
+            document.getElementById("state").readOnly = false;
+            document.getElementById("conutry").readOnly = false;
+            document.getElementById("admin").readOnly = false;
+            document.getElementById("admin_phone").readOnly = false;
+            document.getElementById("update").style.visibility = "visible";
+            document.getElementById("edit").style.visibility = "hidden";
+            
+        }
+        
+    </script>
 
-     
-    <!-- Chart Js -->
-    <script type="text/javascript" src="assets/js/Chart.min.js"></script>  
-    <script type="text/javascript" src="assets/js/chartjs.js"></script> 
-    <script type="text/javascript" >
-
-</body>
 </html>

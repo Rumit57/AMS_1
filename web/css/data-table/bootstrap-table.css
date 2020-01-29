@@ -243,6 +243,7 @@
     text-align: left;
     max-height: 300px;
     overflow: auto;
+    width: max-content;
 }
 
 .fixed-table-toolbar .btn-group > .btn-group {

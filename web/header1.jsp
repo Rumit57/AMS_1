@@ -62,7 +62,7 @@
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="adminProfile.jsp"><i class="fa fa-user fa-fw"></i> Admin Profile</a>
                         </li>
-                        <li><a href="manageCompany.jsp"><i class="fa fa-user fa-fw"></i> Company Profile</a>
+                        <li><a href="SA_company_Deatils.jsp"><i class="fa fa-user fa-fw"></i> Company Profile</a>
                         </li>
                         <li><a href="changepasswordadmin.jsp"><i class="fa fa-edit fa-fw"></i> Change Password</a>
                         </li> <li class="divider"></li>
