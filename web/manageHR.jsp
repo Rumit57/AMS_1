@@ -126,19 +126,7 @@
                                                     <input type="text" placeholder="Enter Confirm Password..." class="form-control">
                                                   </div>
 
-                                                      <div class="form-group">
-                                                          <label>Company Name</label><br>
-                                                     <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%">
-              <option id="1">--Select Status--</option>
-                <option id="1">Primavere System</option>
-             <option id="2">Niyantras
-</option>
-             <option id="3">Goole..
-</option>
-                <option id="3">Amazon..
-</option>
-            </select> 
-                                                  </div>
+                                                     
 
                                                       <div class="form-group">
                                                           <label>Status</label><br>

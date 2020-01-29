@@ -266,6 +266,16 @@
                                                 <p id="add">1947,Chamunda Nagar,Ghelkhadi,Vijalpor</p>
                                             </div>
                                         </div>
+                                            
+                                             <div class="row">
+                                            <div class="col-md-4">
+                                                <label>Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p id="gender">Male</p>
+                                            </div>
+                                        </div>
+                                            
                             <div class="row">
                                             <div class="col-md-4">
                                                 <label>City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
@@ -327,6 +337,10 @@
             document.getElementById("phone").innerHTML = "<input type='text'  class='form-control' name='phone' id='phone' placeholder='enter phone number' value="+phone+" >";
             var address=document.getElementById("add").textContent;
             document.getElementById("add").innerHTML = "<input type='text'  class='form-control' name='address' id='address' placeholder='enter address' value="+address+" >";
+           
+           var gen=document.getElementById("gender").textContent;
+            document.getElementById("gender").innerHTML = "<input type='text'  class='form-control' name='gender' id='gender' placeholder='enter address' value="+gen+" >";
+            
             var city=document.getElementById("city").textContent;
             document.getElementById("city").innerHTML = "<input type='text'  class='form-control' name='city' id='city' placeholder='enter city' value="+city+" >";
             var state=document.getElementById("state").textContent;
@@ -385,4 +399,3 @@
 
 </body>
 </html>
-

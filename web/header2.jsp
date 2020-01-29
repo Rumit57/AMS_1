@@ -11,28 +11,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+          <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+ 
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    
     </head>
-            <%
-                
-                
-//                String workinghour1="";
-//                try {
-//                         Class.forName("com.mysql.jdbc.Driver"); 
-//                            Connection cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/AMS","root","mysql");
-//                            Statement st=cn.createStatement(); 
-//                        String addworkinghour="select * from AMS.manage where idmanage='"+session.getAttribute("id")+"'";
-//                                 ResultSet rs1 = st.executeQuery(addworkinghour);
-//                                if(rs1.next())
-//                                {
-//                                  
-//                                   workinghour1=rs1.getString("workinghour");
-//                                }
-//                         
-//                        } catch (Exception e) {
-//                         e.printStackTrace();
-//                         }   
-            String workinghour1=(String)session.getAttribute("workinghour");
-            %>
+   
     <body>
         
         
@@ -45,7 +31,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="HRdeshboard.jsp"><strong><i class="icon fa fa-desktop"></i> PRIMAVERA</strong></a>
-				
+			<div id="sideNav" href="" >
+		<i class="fa fa-bars icon" ></i> 
+		</div>	
 		
             </div>
  

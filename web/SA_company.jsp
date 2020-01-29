@@ -97,56 +97,58 @@
                                         <div class="modal-header">
                                             <h3 style="width:100%"><center>Company Registration</center></h3>
                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                  
                                         </div>
                                               <div class="modal-body">
-                                                  
                                                   <form action="#">
                                                   <div class="form-group">
                                                     <label>Name</label>
                                                     <input type="text" placeholder="Enter Name..." class="form-control">
                                                   </div>
-
+                                                       <div class="form-group">
+                                                    <label>GSTIN NO</label>
+                                                    <input type="text" placeholder="Enter GSTIN Number..." class="form-control">
+                                                  </div>
                                                       <div class="form-group">
                                                     <label>Email</label>
                                                     <input type="text" placeholder="Enter Email..." class="form-control">
                                                   </div>
-
                                                       <div class="form-group">
                                                     <label>Address 1</label>
                                                     <input type="text" placeholder="Enter Address Line 1..." class="form-control">
                                                   </div>
-
                                                       <div class="form-group">
                                                     <label>Address 2</label>
                                                     <input type="text" placeholder="Enter Address Line 2..." class="form-control">
                                                   </div>
-
                                                       <div class="form-group">
                                                     <label>Phone Number</label>
                                                     <input type="text" placeholder="Enter Phone Number" class="form-control">
                                                   </div>
-
                                                       <div class="form-group">
                                                     <label>City</label>
                                                     <input type="text" placeholder="Enter City..." class="form-control">
                                                   </div>
-
                                                       <div class="form-group">
                                                     <label>State</label>
                                                     <input type="text" placeholder="Enter State..." class="form-control">
                                                   </div>
-
-                                                  <div class="form-group">       
+                                                       <div class="form-group">
+                                                    <label>Pin Code</label>
+                                                    <input type="text" placeholder="Enter Pincode..." class="form-control">
+                                                  </div>
+                                                  <div class="form-group">
                                                     <label>Country</label>
                                                     <input type="text" placeholder="Enter Country..." class="form-control">
+                                                  </div>
+                                                        <div class="form-group">
+                                                    <label>Company Image</label>
+                                                    <input type="file" placeholder="Enter Country..." class="form-control">
                                                   </div>
                                                 </form>
                                               </div>
                                               <div class="modal-footer">
                                                 <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
                                                 <button type="button" class="btn btn-primary">Submit</button>
-                                                
                                               </div>
                                             </div>
                                           </div>

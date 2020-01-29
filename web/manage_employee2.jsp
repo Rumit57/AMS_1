@@ -138,22 +138,18 @@
                                                     <label>First Name</label>
                                                     <input type="text" placeholder="Enter Name..." class="form-control">
                                                   </div>
-
                                                       <div class="form-group">
                                                           <label>Last Name</label> 
                                                     <input type="text"  placeholder="Enter Email..." class="form-control">
                                                   </div>
-
                                                       <div class="form-group">
                                                     <label>Email</label>
                                                     <input type="text" placeholder="Enter Password.." class="form-control">
                                                   </div>
-
                                                       <div class="form-group">
                                                     <label>Mobile Number</label>
                                                     <input type="text" placeholder="Enter Confirm Password..." class="form-control">
                                                   </div>
-
                                                       <div class="form-group">
                                                           <label>User Type</label><br>
                                                      <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%">
@@ -164,7 +160,6 @@
              
             </select> 
                                                   </div>
-
                                                       <div class="form-group">
                                                           <label>Status</label><br>
                                                      <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%">
@@ -176,7 +171,30 @@
 </option>
             </select> 
                                                   </div>
-
+                                                      
+                                                     <div class="form-group">
+                                                    <label>City</label>
+                                                    <input type="text" placeholder="Enter City.." class="form-control">
+                                                  </div>  
+                                                      
+                                                       <div class="form-group">
+                                                    <label>Pin Code</label>
+                                                    <input type="text" placeholder="Enter pincode.." class="form-control">
+                                                  </div> 
+                                                      
+                                                       <div class="form-group">
+                                                    <label>State</label>
+                                                    <input type="text" placeholder="Enter state.." class="form-control">
+                                                  </div> 
+                                                      
+                                                       <div class="form-group">
+                                                    <label>Country</label>
+                                                    <input type="text" placeholder="Enter country.." class="form-control">
+                                                  </div> 
+                                                           <div class="form-group">
+                                                    <label>User Profile Image</label>
+                                                    <input type="file" class="form-control">
+                                                  </div> 
                                                 </form>
                                               </div>
                                               <div class="modal-footer">
@@ -186,6 +204,7 @@
                                             </div>
                                           </div>
                                         </div>
+
                                         
                                     </div>
                                     
@@ -357,6 +376,7 @@ function(){
     <script src="js/data-table/data-table-active.js"></script>
     <script src="js/data-table/bootstrap-editable.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
+    <!--<script src="js/data-table/colResizable-1.5.source.js"></script>-->
     <script src="js/data-table/bootstrap-table-export.js"></script>
   
 </body>
