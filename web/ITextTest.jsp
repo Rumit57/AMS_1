@@ -40,7 +40,7 @@
 
 		// Listing 2. Creation of PdfWriter object
 		PdfWriter writer = PdfWriter.getInstance(document,
-				new FileOutputStream("/home/rumit/Desktop/9.pdf"));
+				new FileOutputStream("/home/rumit/AMS/AMS_1/web/pdf/9.pdf"));
 		
 		document.open();
 
@@ -74,7 +74,7 @@
 		t.addCell(c4);
                  
               
-                for(int i=0;i<10;i++){
+                for(int i=0;i<7;i++){
                 
 		t.addCell("1.1");
 		t.addCell("shah.rumit57@gmail.com");

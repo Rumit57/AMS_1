@@ -23,9 +23,12 @@
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
      <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
     <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
+            <link href="./plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-   
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <style>
         
         .alert {
@@ -175,9 +178,20 @@
                             <td><a href="SA_company_Deatils.jsp?dihtm=<%=count1%>">Primavera Systems</a></td>
                             <td><a href="SA_company_Deatils.jsp?dihtm=<%=count1%>">primavera@hda.com</a></td>
                             <td><a href="SA_company_Deatils.jsp?dihtm=<%=count1%>">987654322</a></td> 
-                            <td class='datatable-ct'><a href='#'><i class='glyphicon glyphicon-pencil'></i></a>
-                &nbsp;
-                <a href='#'><i class='glyphicon glyphicon-remove'></i></a></td>
+                           <td >
+                                    <center>
+                                    <div class="dropdown">
+                                            <div data-toggle="dropdown"><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            
+                                                <ul class="dropdown-menu">
+                                                    <li><a  href="#" data-toggle="modal" data-target="#myModalone" ><i class='glyphicon glyphicon-pencil'></i>&nbsp;&nbsp;Edit</a></li> 
+                                                    <li class="divider"></li>
+                                                    <li><a  href="#" onclick="sweet()"><i  class='glyphicon glyphicon-remove'></i>&nbsp;&nbsp;Delete</a></li> 
+                                                </ul>
+                                        </div>
+                                    </center>
+                                </td>
                       </tr>   
                              <%
                              count1++;
@@ -204,16 +218,18 @@
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->
-    	  <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/umd/popper.min.js"> </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- Bootstrap Js -->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <script src="js/data-table/bootstrap-table.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./plugins/sweetalert/js/sweetalert.min.js"></script>
+    <script src="./plugins/sweetalert/js/sweetalert.init.js"></script> 
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  
+     <script src="js/data-table/bootstrap-table.js"></script>
+    <script src="js/data-table/tableExport.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
+    <script src="js/data-table/bootstrap-editable.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
-    <script src="js/data-table/colResizable-1.5.source.js"></script>
+    <script src="js/data-table/bootstrap-table-export.js"></script>
 </body>
 </html>

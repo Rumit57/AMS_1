@@ -220,7 +220,12 @@
                           
                                 <div class="datatable-dashv1-list custom-datatable-overright">
                                     <div id="toolbar">
-                                        <button  type="button" onclick="pdf()" class="btn btn-primary"> Dowanload PDF </button>
+                                        <a onclick="pdf()" class="btn btn-primary" role="button" href="pdf/9.pdf"
+                                        download="9.pdf">
+                                       Download
+                                     </a>
+                                      
+                                        <!--<button  type="button" onclick="pdf()" class="btn btn-primary"> Dowanload PDF </button>-->
                                         <script>
                                             var request=new XMLHttpRequest();
                                             function pdf(){

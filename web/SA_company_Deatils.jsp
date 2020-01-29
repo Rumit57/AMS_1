@@ -1,41 +1,39 @@
 <%-- 
-    Document   : SA_company
-    Created on : 20 Jan, 2020, 2:27:44 PM
+    Document   : index
+    Created on : 17 Dec, 2019, 9:59:25 AM
     Author     : rumit
 --%>
 
+<%@page import="java.sql.*"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.*"%>
+<%@page import="java.util.Date"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.io.*"%>
+
+<!------ Include the above in your HEAD tag ---------->
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta content="" name="description" />
     <meta content="webthemez" name="author" />
-    <title>Primavera Systems</title>
+    <title>Admin Dashboard</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
     <!-- Morris Chart Styles-->
-
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
-     <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
-    <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
-    <!-- Google Fonts-->
+  
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-   
-    <style>
-        
-        .alert {
-   width:55%;    
-}
-    </style>
+  
 </head>
-    
-   
-
 <body>
        <!--progress-->
     <link href="css/style_1.css" rel="stylesheet">
@@ -49,7 +47,7 @@
         </div>
     </div>
     <div id="wrapper">
-        <%@include file="header3.jsp" %>
+        <%@include file="header1.jsp" %>
         
          <!--/. NAV TOP  -->
        <nav class="navbar-default navbar-side" role="navigation">
@@ -57,68 +55,203 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a  href="Super_Admin_Deshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="SA_company.jsp"><i class="fa fa-pencil"></i>  Company</a>
-                         
-                    </li> 
-                    <li>
-                        <a href="SA_admin.jsp"><i class="fa fa-pencil"></i>  Admin</a>
-                         
-                    </li> 
- 
-    
-        </nav>
-<div id="page-wrapper">
-<div class="header"> 
-       <!-- Static Table Start -->
-       <div class="row">
-            <div class="col-md-12">
-        <div class="data-table-area mg-tb-15">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="sparkline13-list">
-                            <div class="sparkline13-hd">
-                                <div class="main-sparkline13-hd">
-                                    <h1>Company <span class="table-project-n">Details</span></h1>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="sparkline13-graph">
-                                <div class="datatable-dashv1-list custom-datatable-overright">
-                                    <div id="toolbar">
-                                        
-                                        
-                                    </div>
-                                    
-                                    
+                        <a href="manageHR.jsp"><i class="fa fa-edit"></i> HR </a>
+                    </li> 		 
      
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </nav>
+       
+
+      
+		<div id="page-wrapper">
+		  <div class="header"> 
+                      <br>
+                      
+                      <div class="row">
+                         
+                          <div class="col-md-12">
+                               <div class="sparkline13-list">
+        
+    <div class="row">
+        <center><div class="col-sm-10"><h1>Company Details</h1></div></center>
+    	<!--<div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"></a></div>-->
+    </div>
+                                   <br>
+                                
+    <div class="row">
+  		<div class="col-sm-3"><!--left col-->
+              
+
+<!--      <div class="text-center">
+          <img src="logo.png" alt="avatar">
+        <h6>Upload a different photo...</h6>
+        <input type="file" class="text-center center-block file-upload">
+      </div></hr><br>-->
+
+                <div style="border-style: solid">
+                    <img src="images.png" class="img-thumbnail" max-width="-webkit-fill-available" max-height="-webkit-fill-available" alt=""/>
+                     
                 </div>
-            </div>
-        </div>
-        <!-- Static Table End -->
-                  </div> 
-       </div>
+<br>
+<br>
+        <input type="file" class="text-center center-block file-upload">
+      
+        </div><!--/col-3-->
+        
+        <input style="margin-right: 15px"  type="submit" class="btn btn-primary pull-right" value="Edit Details"/>
+        <br>
+    	<div class="col-sm-9">
+            
+
+              
+          <div class="tab-content">
+                 
+            <div class="tab-pane active" id="home">
+                <hr>
+                  <form class="form" action="##" method="post" id="registrationForm">
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="first_name"><h4>Company name</h4></label>
+                              <input type="text" readonly class="form-control" name="first_name" id="first_name" placeholder="first name" value="Primavera System">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                      </div>
+          
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="staticphn"><h4>Phone</h4></label>
+                              <input type="text" id="staticphn" readonly class="form-control" name="phone" id="phone" placeholder="enter phone" value="8866340644">
+                          </div>
+                      </div>
+          
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                             <label for="mobile"><h4>Mobile</h4></label>
+                             <input type="text" class="form-control" readonly name="mobile" id="mobile" placeholder="enter mobile number" value="0235-220160">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="email"><h4>Email</h4></label>
+                              <input type="email" class="form-control" readonly name="email" id="email" value="Primavera-system25@gmail.com">
+                          </div>
+                      </div>
+                    
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="text"><h4>Address</h4></label>
+                              <input type="text" class="form-control" readonly name="password" id="password" value="301,Alkananda Complax,Akota Road">
+                          </div>
+                      </div>
+                        <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="text"><h4>City</h4></label>
+                              <input type="email" class="form-control" readonly id="location" value="Vodadra">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="text"><h4>State</h4></label>
+                            <input type="text" class="form-control" readonly name="password2" id="password2" value="Gujarat">
+                          </div>
+                      </div>
+                       <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="text"><h4>Conutry</h4></label>
+                            <input type="text" class="form-control" readonly name="password2" id="password2" value="India">
+                          </div>
+                      </div>
+                     <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="text"><h4>Admin</h4></label>
+                            <input type="text" class="form-control" readonly name="password2" id="password2" value="Ninad Shah">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="text"><h4>Admin phone number</h4></label>
+                            <input type="text" class="form-control" readonly name="password2" id="password2" value="8866291338">
+                          </div>
+                      </div>
+                      
+              	</form>
+              
+              <hr>
+              
+             </div><!--/tab-pane-->
+           
+               
+              </div><!--/tab-pane-->
+          </div><!--/tab-content-->
+
+        </div><!--/col-9-->
+    </div><!--/row-->
 </div>
-       <div id="page-inner">
+                                       </div>
+       </div>               
+                         
+                 
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+            <div id="page-inner">
+
+                <!-- /. ROW  -->
+	
+
 		
                 <%@include file="footer.jsp" %>
             </div>
-   </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->
-    	  <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/umd/popper.min.js"> </script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="assets/js/jquery-1.10.2.js"></script>
-  
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	 
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+	
+	
+	<script src="assets/js/easypiechart.js"></script>
+	<script src="assets/js/easypiechart-data.js"></script>
+	
+	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+	
+    <!-- Custom Js -->
+    <script src="assets/js/custom-scripts.js"></script>
+
+     
+    <!-- Chart Js -->
+    <script type="text/javascript" src="assets/js/Chart.min.js"></script>  
+    <script type="text/javascript" src="assets/js/chartjs.js"></script> 
+    <script type="text/javascript" >
 
 </body>
 </html>
