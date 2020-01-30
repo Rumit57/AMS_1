@@ -118,8 +118,8 @@
                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                              <label for="Phone"><h4>GSTIN NO</h4></label>
-                              <input type="text" id="phone" readonly class="form-control" name="phone" id="phone" placeholder="enter phone number" value="35AABCS1429B1ZX">
+                              <label for="GST"><h4>GSTIN NO</h4></label>
+                              <input type="text" readonly class="form-control" name="GST" id="GST"  value="35AABCS1429B1ZX">
                           </div>
                       </div>
           
@@ -175,20 +175,7 @@
                             <input type="text" class="form-control" readonly name="Conutry" id="conutry" value="India">
                           </div>
                       </div>
-                     <div class="form-group">
-                          
-                          <div class="col-xs-6">
-                            <label for="Admin"><h4>Admin</h4></label>
-                            <input type="text" class="form-control" readonly name="Admin" id="admin" value="Ninad Shah">
-                          </div>
-                      </div>
-                      <div class="form-group">
-                          
-                          <div class="col-xs-6">
-                            <label for="Admin_phone"><h4>Admin phone number</h4></label>
-                            <input type="text" class="form-control" readonly name="Admin_phone" id="admin_phone" value="8866291338">
-                          </div>
-                      </div>
+                    
                       
                       <div class="form-group">
                           
@@ -237,7 +224,6 @@
         function edit()
         {
             document.getElementById("company_name").readOnly = false;
-            document.getElementById("phone").readOnly = false;
             document.getElementById("mobile").readOnly = false;
             document.getElementById("email").readOnly = false;
             document.getElementById("address").readOnly = false;
@@ -245,8 +231,6 @@
             document.getElementById("state").readOnly = false;
               document.getElementById("pin").readOnly = false;
             document.getElementById("conutry").readOnly = false;
-            document.getElementById("admin").readOnly = false;
-            document.getElementById("admin_phone").readOnly = false;
             document.getElementById("update").style.visibility = "visible";
             document.getElementById("edit").style.visibility = "hidden";
             

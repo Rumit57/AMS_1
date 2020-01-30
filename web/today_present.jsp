@@ -205,7 +205,7 @@ body {
                             <div class="sparkline13-hd">
                                 <center>
                                 <div class="main-sparkline13-hd">
-                                    <h1><b>Yesterday Present Data</b></h1>
+                                    <h1><b>Today Present Data</b></h1>
                                     <br>
                                 </div>
                                     </center>
@@ -238,7 +238,7 @@ body {
                             <td><%=count1%></td>
                             <td>XYZ</td>
                             <td>09:00:00 AM</td>
-                            <td>07:00:00 PM</td>
+                            <td>-</td>
                             <td><a style="color: blue" data-toggle="modal" data-target="#myModal" href="#"><u>Status</u></a></td>
                             </tr>
                             <%

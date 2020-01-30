@@ -220,6 +220,7 @@
                                             <tr>
                                                 <th data-field="id">ID</th>
                                                 <th data-field="name" data-editable="true">Name</th>
+                                                <th data-field="company" data-editable="true">Company Name</th>
                                                 <th data-field="Email" data-editable="true">Email</th>
                                                 <th data-field="Phone" data-editable="true">Phone</th>
                                                 <th data-field="action">Action</th>
@@ -234,7 +235,8 @@
                         {
                              %>
                       <tr>
-                     <td>1</td>
+                          <td><%=count1%></td>
+                     <td>Rumit Shah</td>
                      <td>Primavera Systems</td>
                      <td>primavera@hda.com</td>
                      <td>987654322</td>

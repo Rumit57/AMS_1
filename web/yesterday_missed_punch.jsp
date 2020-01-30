@@ -31,116 +31,13 @@
 </head>
 
     <style>
-    /* width */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  /*background-color: #474e5d;*/
-  font-family: Helvetica, sans-serif;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline1 {
-  position: relative;
-/*  max-width: 500px;*/
-  margin: auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline1::after {
-  content: '';
-  position: absolute;
-  width: 3px;
-  background-color: black;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.container1 {
-  padding: 10px 8px;
-  position: relative;
-  background-color: #f5f5f5;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.container1::after {
-  content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    right: -6px;
-    background-color: black;
-    border: 3px solid #FF9F55;
-    top: 20px;
-    border-radius: 50%;
-    z-index: 6;
-}
-
-/* Place the container to the left */
-.left1 {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right1 {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-/*.left1::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 1px;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}*/
-
-/* Add arrows to the right container (pointing left) */
-/*.right1::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}*/
-
-/* Fix the circle for containers on the right side */
-.right1::after {
-  left:-10px;
-}
-
-/* The actual content */
-.content1 {
-    padding: 1px 10px;
-    background-color: #ddd;
-    position: relative;
-    border-radius: 8px;
-}
-.p1{
-  
-    line-height:25px;
-  padding-top:8px;
-}
+ 
 .modal-body {
     max-height: calc(100vh - 210px);
     overflow-y: auto;
+}
+textarea {
+  resize: vertical;
 }
 
 </style>
@@ -205,7 +102,7 @@ body {
                             <div class="sparkline13-hd">
                                 <center>
                                 <div class="main-sparkline13-hd">
-                                    <h1><b>Yesterday Present Data</b></h1>
+                                    <h1><b>Yesterday Missed Punch Data</b></h1>
                                     <br>
                                 </div>
                                     </center>
@@ -221,9 +118,9 @@ body {
                                             <tr>
                                                 <th data-field="id">NO</th>
                                                 <th data-field="name" data-editable="true">Name</th>
-                                                <th data-field="Email" data-editable="true">PunchIn Time</th>
-                                                <th data-field="Phone" data-editable="true">PunchOut Time</th>
-                                                <th data-field="Status" data-editable="true">Action</th>
+                                                <th data-field="email" data-editable="true">Email</th>
+                                                <th data-field="phone" data-editable="true">Phone</th>
+                                                <th data-field="fix" data-editable="true">Action</th>
                                             </tr>
                                            
                                         </thead>
@@ -236,12 +133,12 @@ body {
                             %>
                             <tr>
                             <td><%=count1%></td>
-                            <td>XYZ</td>
-                            <td>09:00:00 AM</td>
-                            <td>07:00:00 PM</td>
-                            <td><a style="color: blue" data-toggle="modal" data-target="#myModal" href="#"><u>Status</u></a></td>
+                            <td>Rumit</td>
+                            <td>shah.rumit57@gmail.com</td>
+                            <td>8848438823</td>
+                            <td><button style="width: 80%" class="btn btn-success " data-toggle="modal" data-target="#myModal" href="#"><u>Fix</u></button></td>
                             </tr>
-                            <%
+                       <%
                             count1++;
                         }
                         %>          
@@ -273,111 +170,34 @@ body {
           
           <div id="myModal" role="dialog" tabindex="-1" aria-hidden="true" class="modal" data-backdrop="static">
                
-                 <div class="modal-dialog modal-lg">
-                                              <div class="modal-content">
+                 <div role="document" class="modal-dialog">
+                                            <div class="modal-content">
                                         <div class="modal-header">
-                                            
-                                            <h3 style="width:100%"><center>Status</center></h3>
+                                            <h3 style="width:100%"><center>Fix</center></h3>
                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                                  <div class="modal-body" >
-                                                   
-                        
-                            <div class="panel-body ">
-                            <div class="timeline1">
-  <div class="container1 left1">
-    <div class="content1">
-        <p class="p1" style="color: green">Punch In <br> <i class="fa fa-clock-o"></i><b>  09:00 AM 10/12/2019</b>  </p> 
-    </div>
-  </div>
-  <div class="container1 right1">
-    <div class="content1">
-
-        <p class="p1" style="color:red" >Punch Out  <br> <i class="fa fa-clock-o"></i><b> 12:00 AM 10/12/2019</b></p>
-    										
-										
-    
-    </div>
-  </div>
-  <div class="container1 left1">
-    <div class="content1">
-     
-        <p class="p1" style="color: green">Punch In <br> <i class="fa fa-clock-o"></i><b>  1:00 PM 10/12/2019</b>  </p>                                                                    
-   
-      
-    </div>
-  </div>
-  <div class="container1 right1">
-    <div class="content1">
-        <p class="p1" style="color:red">Punch Out <br> <i class="fa fa-clock-o"></i><b>  4:00 PM 10/12/2019</b></p>
-    
-     
-    </div>
-  </div>
-  <div class="container1 left1">
-    <div class="content1">
-        <p class="p1" style="color: green">Punch In <br> <i class="fa fa-clock-o"></i><b>  6:00 PM 10/12/2019 </b>  </p> 
-    </div>
-  </div>
-  <div class="container1 right1">
-    <div class="content1">
-        <p class="p1" style="color:red">Punch Out <br> <i class="fa fa-clock-o"></i><b>  7:15 PM 10/12/2019</b></p>
-    
-										
-      
-    </div>
-      
-  </div>
-                            <div class="container1 left1">
-    <div class="content1">
-        <p class="p1" style="color: green">Punch In <br> <i class="fa fa-clock-o"></i><b>  6:00 PM 10/12/2019</b>  </p> 
-    </div>
-  </div>
-                            <div class="container1 right1">
-    <div class="content1">
-        <p class="p1" style="color:red">Punch Out <br> <i class="fa fa-clock-o"></i><b>  7:15 PM 10/12/2019</b></p>
-
-    </div>
-
-  </div>
-                                
-                                                       <div class="container1 left1">
-    <div class="content1">
-        <p class="p1" style="color: green">Punch In <br> <i class="fa fa-clock-o"></i><b>  6:00 PM 10/12/2019</b>  </p> 
-    </div>
-  </div>
-                            <div class="container1 right1">
-    <div class="content1">
-        <p class="p1" style="color:red">Punch Out <br> <i class="fa fa-clock-o"></i><b>  7:15 PM 10/12/2019</b></p>
-
-    </div>
-
-  </div>
-                                
-                                
-                                                       <div class="container1 left1">
-    <div class="content1">
-        <p class="p1" style="color: green">Punch In <br> <i class="fa fa-clock-o"></i><b>  6:00 PM 10/12/2019</b>  </p> 
-    </div>
-  </div>
-                            <div class="container1 right1">
-    <div class="content1">
-        <p class="p1" style="color:red">Punch Out <br> <i class="fa fa-clock-o"></i><b>  7:15 PM 10/12/2019</b></p>
-
-    </div>
-
-  </div>
-                                
-    
-</div>
-                    </div>
-        
-                                        </div>
-                                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                  </div>
-                         </div>
-                     </div>
+                                                </div>
+                                              <div class="modal-body">
+                                                  
+                                                  <form action="#">
+                                                  <div class="form-group">
+                                                    <label>Time</label>
+                                                    <input type="time" class="form-control">
+                                                  </div>
+                                                      <div class="form-group">
+                                                          <label>Reason</label> 
+                                                          <textarea class="form-control" rows="4" cols="50" placeholder="Write a Reason.."></textarea>
+                                                  </div>
+                                                  
+                                                
+                                                    
+                                                </form>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                                                <button type="button" class="btn btn-primary">Submit</button>
+                                              </div>
+                                            </div>
+                                          </div>
           </div>
          
           <!--Modal End-->

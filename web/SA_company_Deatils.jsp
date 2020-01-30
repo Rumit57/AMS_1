@@ -47,7 +47,7 @@
         </div>
     </div>
     <div id="wrapper">
-        <%@include file="header1.jsp" %>
+        <%@include file="header3.jsp" %>
         
          <!--/. NAV TOP  -->
        <nav class="navbar-default navbar-side" role="navigation">
@@ -55,10 +55,15 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a  href="Super_Admin_Deshboard.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="manageHR.jsp"><i class="fa fa-edit"></i> HR </a>
+                        <a  href="SA_company.jsp"><i class="fa fa-pencil"></i>  Company</a>
+                         
+                    </li> 
+                    <li>
+                        <a href="SA_admin.jsp"><i class="fa fa-pencil"></i>  Admin</a>
+                         
                     </li> 		 
      
         </nav>
@@ -112,17 +117,15 @@
                               <input type="text" readonly class="form-control" name="company_name" id="company_name" placeholder="company name" value="Primavera System">
                           </div>
                       </div>
-                      <div class="form-group">
-                          
-                      </div>
-          
-                      <div class="form-group">
+                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                              <label for="Phone"><h4>Phone</h4></label>
-                              <input type="text" id="phone" readonly class="form-control" name="phone" id="phone" placeholder="enter phone number" value="8866340644">
+                              <label for="GST"><h4>GSTIN NO</h4></label>
+                              <input type="text" readonly class="form-control" name="GST" id="GST" placeholder="Enter GST no." value="35AABCS1429B1ZX">
                           </div>
                       </div>
+          
+                      
           
                       <div class="form-group">
                           <div class="col-xs-6">
@@ -228,7 +231,7 @@
         function edit()
         {
             document.getElementById("company_name").readOnly = false;
-            document.getElementById("phone").readOnly = false;
+            document.getElementById("GST").readOnly = false;
             document.getElementById("mobile").readOnly = false;
             document.getElementById("email").readOnly = false;
             document.getElementById("address").readOnly = false;
