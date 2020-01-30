@@ -223,14 +223,22 @@ body {
                                                 <th data-field="name" data-editable="true">Name</th>
                                                 <th data-field="Email" data-editable="true">PunchIn Time</th>
                                                 <th data-field="Phone" data-editable="true">PunchOut Time</th>
+                                                <th data-field="slot" data-editable="true">Slots</th>
                                                 <th data-field="Status" data-editable="true">Action</th>
                                             </tr>
                                            
                                         </thead>
                                         <tbody>
-                                            
-                        <% 
-                        int count1=1;
+                                             <tr>
+                            <td>1</td>
+                            <td>XYZ</td>
+                            <td>09:00:00 AM</td>
+                            <td>07:00:00 PM</td>
+                            <td><i class="fa fa-times text-danger"></i> &nbsp; <i class="fa fa-check text-success"></i></td>
+                            <td><a style="color: blue" data-toggle="modal" data-target="#myModal" href="#"><u>Status</u></a></td>
+                            </tr>
+                        <%
+                        int count1=2;
                         for(int i=0;i<=5;i++)
                         {
                             %>
@@ -239,13 +247,21 @@ body {
                             <td>XYZ</td>
                             <td>09:00:00 AM</td>
                             <td>07:00:00 PM</td>
+                            <td><i class="fa fa-check text-success"></i> &nbsp; <i class="fa fa-times text-danger"></i></td>
                             <td><a style="color: blue" data-toggle="modal" data-target="#myModal" href="#"><u>Status</u></a></td>
                             </tr>
                             <%
                             count1++;
                         }
-                        %>          
-                  
+                        %>
+                         <tr>
+                            <td>8</td>
+                            <td>XYZ</td>
+                            <td>09:00:00 AM</td>
+                            <td>07:00:00 PM</td>
+                            <td><i class="fa fa-check text-success"></i> &nbsp; <i class="fa fa-check text-success"></i></td>
+                            <td><a style="color: blue" data-toggle="modal" data-target="#myModal" href="#"><u>Status</u></a></td>
+                            </tr>
                                         </tbody>
                                     </table>
         

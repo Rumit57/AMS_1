@@ -110,6 +110,7 @@
                                                 <th data-field="name" data-editable="true">Name</th>
                                                 <th data-field="punchin_time" data-editable="true">PunchIN Time</th>
                                                 <th data-field="late_coming_time" data-editable="true">Late Coming Time</th>
+                                                <th data-field="action" data-editable="true">Action</th>
                                                 
                                             </tr>
                                            
@@ -126,7 +127,7 @@
                             <td>abc</td>
                             <td>10:00:00</td>
                             <td>01:00:00</td>   
-                            
+                            <td><button style="width: 80%" class="btn btn-success " data-toggle="modal" data-target="#myModal" href="#"><u>Fix</u></button></td>
                             </tr>
                             <%
                             count1++;
