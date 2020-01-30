@@ -153,7 +153,7 @@
                                                       <div class="form-group">
                                                           <label>User Type</label><br>
                                                      <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%">
-              <option id="1">--Select User Type--</option>
+              <option id="">--Select User Type--</option>
                 <option id="1">Employee</option>
              <option id="2">Intern
 </option>
