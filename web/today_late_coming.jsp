@@ -109,7 +109,7 @@
                                                 <th data-field="id">NO</th>
                                                 <th data-field="name" data-editable="true">Name</th>
                                                 <th data-field="punchin_time" data-editable="true">PunchIN Time</th>
-                                                <th data-field="late_coming_time" data-editable="true">Late Come Time</th>
+                                                <th data-field="late_coming_time" data-editable="true">Late Coming Time</th>
                                                 
                                             </tr>
                                            

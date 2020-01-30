@@ -109,7 +109,7 @@
                                                 <th data-field="id">NO</th>
                                                 <th data-field="name" data-editable="true">Name</th>
                                                 <th data-field="Email" data-editable="true">Email</th>
-                                                <th data-field="Phone" data-editable="true">Phone Number Time</th>
+                                                <th data-field="Phone" data-editable="true">Phone Number</th>
                                                 
                                             </tr>
                                            

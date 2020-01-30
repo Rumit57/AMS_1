@@ -160,17 +160,7 @@
              
             </select> 
                                                   </div>
-                                                      <div class="form-group">
-                                                          <label>Status</label><br>
-                                                     <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%">
-              <option id="1">--Select Status--</option>
-                <option id="1">Active</option>
-             <option id="2">In-Active.
-</option>
-             <option id="3">Delete.
-</option>
-            </select> 
-                                                  </div>
+                                                
                                                       
                                                      <div class="form-group">
                                                     <label>City</label>

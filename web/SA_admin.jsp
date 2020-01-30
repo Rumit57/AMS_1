@@ -121,7 +121,7 @@
                                                   </div>
 
                                                       <div class="form-group">
-                                                    <label>PassWord</label>
+                                                    <label>Password</label>
                                                     <input type="text" placeholder="Enter Password.." class="form-control">
                                                   </div>
 
