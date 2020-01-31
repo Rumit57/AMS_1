@@ -27,7 +27,10 @@
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-  <style>
+ 
+</head>
+
+    <style>
  
 .modal-body {
     max-height: calc(100vh - 210px);
@@ -38,9 +41,6 @@ textarea {
 }
 
 </style>
-</head>
-
-  
    
 
 <body>
@@ -104,7 +104,7 @@ textarea {
                             <div class="sparkline13-hd">
                                 <center>
                                 <div class="main-sparkline13-hd">
-                                    <h1><b>Yesterday Late Coming Data</b></h1>
+                                    <h1><b>Today Early Leaving Data</b></h1>
                                     <br>
                                 </div>
                                     </center>
@@ -112,7 +112,47 @@ textarea {
                             <div class="sparkline13-graph">
                                 <div class="datatable-dashv1-list custom-datatable-overright">
                                     
-                                    
+                                    <div id="toolbar">
+                                        
+                                        <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary"> + Add Leave </button>
+                                        
+                                    </div>
+                                        
+                                        <!-- Modal-->
+                                        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal" data-backdrop="static">
+                                          <div role="document" class="modal-dialog">
+                                            <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 style="width:100%"><center>Apply To Leave </center></h3>
+                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                              <div class="modal-body">
+                                                  
+                                                  <form action="#">
+                                                  <div class="form-group">
+                                                    <label>Employee Id</label>
+                                                    <input type="text" placeholder="Enter Employee Id..." class="form-control">
+                                                  </div>
+                                                      
+                                                      <div class="form-group">
+                                                    <label>Leaving Time</label>
+                                                    <input type="time"  class="form-control">
+                                                  </div>
+                                                       <div class="form-group">
+                                                          <label>Reason</label> 
+                                                          <textarea class="form-control" rows="4" cols="50" placeholder="Write a Reason.."></textarea>
+                                                  </div>
+                                                      
+                                                </form>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                                                <button type="button" class="btn btn-primary">Submit</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
                                     <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true"  data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
                                         data-cookie-id-table="saveId" data-click-to-select="true" data-toolbar="#toolbar">
                                         <thead>
@@ -120,43 +160,44 @@ textarea {
                                             <tr>
                                                 <th data-field="id">NO</th>
                                                 <th data-field="name" data-editable="true">Name</th>
-                                                <th data-field="punchin_time" data-editable="true">PunchIN Time</th>
-                                                <th data-field="late_coming_time" data-editable="true">Late Coming Time</th>
-                                              <th data-field="action" data-editable="true">Action</th>
-                                                
+                                                <th data-field="email" data-editable="true">Email</th>
+                                                <th data-field="phone" data-editable="true">Phone</th>
+                                                <th data-field="time" data-editable="true">Time</th>
+                                                <th data-field="reason" data-editable="true">Reason</th>
+                                                <th data-field="applied" data-editable="true">Applied</th>
                                             </tr>
                                            
                                         </thead>
                                         <tbody>
                                             
-                       <tr>
-                            <td>1</td>
-                            <td>abc</td>
-                            <td>13:00:00</td>
-                            <td>04:00:00</td>   
-                            <td><u><a data-toggle="modal" data-target="#myModal" style="color: blue"> Add Reason</a></u></td>  
-                            </tr>
+                        <% 
+                        int count1=1;
+                        for(int i=0;i<=3;i++)
+                        {
+                            %>
                             <tr>
-                            <td>2</td>
-                            <td>abc</td>
-                            <td>10:00:00</td>
-                            <td>01:00:00</td>   
-                            <td></td>   
+                            <td><%=count1%></td>
+                            <td>Rumit</td>
+                            <td>shah.rumit57@gmail.com</td>
+                            <td>8848438823</td>
+                            <td>18:03:45</td>
+                            <td>Attend family function.</td>
+                            <td><i class="fa fa-check text-success"></i></td>
                             </tr>
+                            
                             <tr>
-                            <td>3</td>
-                            <td>abc</td>
-                            <td>14:00:00</td>
-                            <td>05:00:00</td>   
-                            <td><u><a data-toggle="modal" data-target="#myModal" style="color: blue"> Add Reason</a></u></td>  
+                            <td><%=++count1%></td>
+                            <td>karan</td>
+                            <td>karan@gmail.com</td>
+                            <td>8848415797</td>
+                            <td>14:30:15</td>
+                            <td>-</td>
+                            <td><i class="fa fa-times text-danger"></i></td>
                             </tr>
-                            <tr>
-                            <td>4</td>
-                            <td>abc</td>
-                            <td>16:00:00</td>
-                            <td>07:00:00</td>   
-                            <td></td>  
-                            </tr>        
+                       <%
+                            count1++;
+                        }
+                        %>          
                   
                                         </tbody>
                                     </table>
@@ -180,20 +221,24 @@ textarea {
     </div>
                 </div>
           
-           <!--modal-->
+          
+          <!--modal-->
           
           <div id="myModal" role="dialog" tabindex="-1" aria-hidden="true" class="modal" data-backdrop="static">
                
                  <div role="document" class="modal-dialog">
                                             <div class="modal-content">
                                         <div class="modal-header">
-                                            <h3 style="width:100%"><center>Reason For Yesterday Late Coming</center></h3>
+                                            <h3 style="width:100%"><center>Fix</center></h3>
                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                 </div>
                                               <div class="modal-body">
                                                   
                                                   <form action="#">
-                                                  
+                                                  <div class="form-group">
+                                                    <label>Time</label>
+                                                    <input type="time" class="form-control">
+                                                  </div>
                                                       <div class="form-group">
                                                           <label>Reason</label> 
                                                           <textarea class="form-control" rows="4" cols="50" placeholder="Write a Reason.."></textarea>
@@ -212,8 +257,6 @@ textarea {
           </div>
          
           <!--Modal End-->
-       
-          
           
    <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->

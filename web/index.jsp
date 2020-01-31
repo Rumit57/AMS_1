@@ -84,7 +84,7 @@
 						<div class="number">
 							<h3>
 								</h3><h2>10</h2>
-								<small> No of HR</small>
+								<small>HR</small>
 							 
 						</div>
 						<div class="icon">
@@ -100,7 +100,7 @@
 						<div class="number">
 							<h3>
 								</h3><h2>440</h2>
-								<small> No of Employee</small>
+                                                                <small style="text-transform: capitalize;">Employees</small>
 							 
 						</div>
 						<div class="icon">

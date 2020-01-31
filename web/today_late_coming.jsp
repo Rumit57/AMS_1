@@ -27,7 +27,17 @@
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  <style>
  
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+textarea {
+  resize: vertical;
+}
+
+</style>
 </head>
 
    
@@ -112,28 +122,43 @@
                                                 <th data-field="name" data-editable="true">Name</th>
                                                 <th data-field="punchin_time" data-editable="true">PunchIN Time</th>
                                                 <th data-field="late_coming_time" data-editable="true">Late Coming Time</th>
+                                                <th data-field="action" data-editable="true">Action</th>
                                                 
                                             </tr>
                                            
                                         </thead>
                                         <tbody>
                                             
-                        <% 
-                        int count1=1;
-                        for(int i=0;i<=5;i++)
-                        {
-                            %>
+                      
                             <tr>
-                            <td><%=count1%></td>
+                            <td>1</td>
+                            <td>abc</td>
+                            <td>13:00:00</td>
+                            <td>04:00:00</td>   
+                            <td><u><a data-toggle="modal" data-target="#myModal" style="color: blue"> Add Reason</a></u></td>  
+                            </tr>
+                            <tr>
+                            <td>2</td>
                             <td>abc</td>
                             <td>10:00:00</td>
                             <td>01:00:00</td>   
-                            
+                            <td></td>   
                             </tr>
-                            <%
-                            count1++;
-                        }
-                        %>          
+                            <tr>
+                            <td>3</td>
+                            <td>abc</td>
+                            <td>14:00:00</td>
+                            <td>05:00:00</td>   
+                            <td><u><a data-toggle="modal" data-target="#myModal" style="color: blue"> Add Reason</a></u></td>  
+                            </tr>
+                            <tr>
+                            <td>4</td>
+                            <td>abc</td>
+                            <td>16:00:00</td>
+                            <td>07:00:00</td>   
+                            <td></td>  
+                            </tr>
+                          
                   
                                         </tbody>
                                     </table>
@@ -157,7 +182,38 @@
     </div>
                 </div>
           
+           <!--modal-->
           
+          <div id="myModal" role="dialog" tabindex="-1" aria-hidden="true" class="modal" data-backdrop="static">
+               
+                 <div role="document" class="modal-dialog">
+                                            <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 style="width:100%"><center> Add Reason For Late Coming</center></h3>
+                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                              <div class="modal-body">
+                                                  
+                                                  <form action="#">
+                                                  
+                                                      <div class="form-group">
+                                                          <label>Reason</label> 
+                                                          <textarea class="form-control" rows="4" cols="50" placeholder="Write a Reason.."></textarea>
+                                                  </div>
+                                                  
+                                                
+                                                    
+                                                </form>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                                                <button type="button" class="btn btn-primary">Submit</button>
+                                              </div>
+                                            </div>
+                                          </div>
+          </div>
+         
+          <!--Modal End-->
        
           
    <script src="assets/js/jquery-1.10.2.js"></script>
