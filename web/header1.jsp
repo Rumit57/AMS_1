@@ -22,7 +22,7 @@
   left: 0;
   background-color: #3E3E3E;
   overflow-x: hidden;
-  transition: 1.2s;
+  /*transition: 1.2s;*/
   padding-top: 60px;
   
   

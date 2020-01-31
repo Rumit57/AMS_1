@@ -29,7 +29,7 @@
   left: 0;
   background-color: #3E3E3E;
   overflow-x: hidden;
-  /*transition: 1.2s;*/
+  /*transition: 0.2s;*/
   padding-top: 60px;
   
   
@@ -60,7 +60,7 @@
 <!--			<div id="sideNav" href="" >
 		<i class="fa fa-bars icon" ></i> 
 		</div>	-->
-			<div id="sideNav">
+        <div id="sideNav" >
                             <i class="fa fa-bars icon" id="closeside" style="visibility: visible" onclick="Nav()"></i> 
 		</div>	
 		
@@ -96,9 +96,6 @@
                {
                     document.getElementById("mySidebar").style.width = "0";
                     document.getElementById("page-wrapper").style.marginLeft = "0px";
-                   
-                  
-             
                }
                else
                {
