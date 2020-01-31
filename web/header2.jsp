@@ -29,7 +29,7 @@
   left: 0;
   background-color: #3E3E3E;
   overflow-x: hidden;
-  transition: 0.5s;
+  /*transition: 1.2s;*/
   padding-top: 60px;
   
   
@@ -62,8 +62,6 @@
 		</div>	-->
 			<div id="sideNav">
                             <i class="fa fa-bars icon" id="closeside" style="visibility: visible" onclick="Nav()"></i> 
-                            <!--<button class="fa fa-bars icon" id="closeside" style="visibility: visible" onclick="Nav()"></button>-->
-                            <!--<button class="openbtn" id="openside" style="visibility: hidden" onclick="openNav()">☰</button>-->
 		</div>	
 		
             </div>

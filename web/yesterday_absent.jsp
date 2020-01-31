@@ -50,6 +50,7 @@
         
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
+                <div id="mySidebar" class="sidebar">
                 <ul class="nav" id="main-menu">
 
                     <li>
@@ -72,6 +73,7 @@
                   
                        
                 </ul>   
+            </div>
             </div>
        </nav>
        

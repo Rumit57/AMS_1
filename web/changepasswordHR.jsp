@@ -38,11 +38,12 @@
         </div>
     </div>
     <div id="wrapper">
-        <%@include file="header1.jsp" %>
+        <%@include file="header2.jsp" %>
         
          <!--/. NAV TOP  -->
       <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
+                <div id="mySidebar" class="sidebar">
                 <ul class="nav" id="main-menu">
 
                     <li>
@@ -65,6 +66,7 @@
                   
                        
                 </ul>   
+            </div>
             </div>
        </nav>
        

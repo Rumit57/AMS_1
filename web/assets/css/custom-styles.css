@@ -21,6 +21,7 @@ body {
     padding: 15px 15px;
     min-height: 200px;
     background: #EDEDED;
+    /*transition: 1.2s;*/
 }
 #page-inner {
     width:100%;
@@ -627,6 +628,7 @@ line-height: 1.428571429;
                display: flex;
                 flex-direction: column;
                 min-height: 100vh;
+                
     }
 	
 	

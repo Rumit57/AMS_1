@@ -11,29 +11,34 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+                 <style>
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3E3E3E;
+  overflow-x: hidden;
+  transition: 1.2s;
+  padding-top: 60px;
+  
+  
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+ 
+</style>
     </head>
-            <%
-                
-                
-//                String workinghour1="";
-//                try {
-//                         Class.forName("com.mysql.jdbc.Driver"); 
-//                            Connection cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/AMS","root","mysql");
-//                            Statement st=cn.createStatement(); 
-//                        String addworkinghour="select * from AMS.manage where idmanage='"+session.getAttribute("id")+"'";
-//                                 ResultSet rs1 = st.executeQuery(addworkinghour);
-//                                if(rs1.next())
-//                                {
-//                                  
-//                                   workinghour1=rs1.getString("workinghour");
-//                                }
-//                         
-//                        } catch (Exception e) {
-//                         e.printStackTrace();
-//                         }   
-            String workinghour1=(String)session.getAttribute("workinghour");
-            %>
-    <body>
+     
+    <body onload="Nav()">
         
         
         <nav class="navbar navbar-default top-navbar" role="navigation">
@@ -45,7 +50,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="Super_Admin_Deshboard.jsp"><strong><i class="icon fa fa-desktop"></i> PRIMAVERA</strong></a>
-				
+			<div id="sideNav">
+                            <i class="fa fa-bars icon" id="closeside" style="visibility: visible" onclick="Nav()"></i> 
+		</div>		
 		
             </div>
  
@@ -72,6 +79,19 @@
                 <!-- /.dropdown -->
             </ul>
         </nav>
-       
+       <script>
+           function Nav(){
+               if(document.getElementById("mySidebar").style.width=="260px")
+               {
+                    document.getElementById("mySidebar").style.width = "0";
+                    document.getElementById("page-wrapper").style.marginLeft = "0px";
+               }
+               else
+               {
+                   document.getElementById("mySidebar").style.width = "260px";
+                   document.getElementById("page-wrapper").style.marginLeft = "260px";
+               }
+           }
+</script>
     </body>
 </html>

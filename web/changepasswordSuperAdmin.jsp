@@ -43,6 +43,7 @@
          <!--/. NAV TOP  -->
     <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
+                <div id="mySidebar" class="sidebar">
                 <ul class="nav" id="main-menu">
 
                     <li>
@@ -56,7 +57,9 @@
                         <a href="SA_admin.jsp"><i class="fa fa-pencil"></i>  Admin</a>
                          
                     </li> 
-            
+                </ul>
+                </div>
+            </div>
         </nav>
 
       

@@ -163,6 +163,7 @@ body {
         
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
+                <div id="mySidebar" class="sidebar">
                 <ul class="nav" id="main-menu">
 
                     <li>
@@ -185,6 +186,7 @@ body {
                   
                        
                 </ul>   
+            </div>
             </div>
        </nav>
        
