@@ -58,6 +58,7 @@
          <!--/. NAV TOP  -->
        <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
+                <div id="mySidebar" class="sidebar">
                 <ul class="nav" id="main-menu">
 
                     <li>
@@ -84,7 +85,7 @@
        </nav>
        
 
-		<div id="page-wrapper">
+         <div id="page-wrapper" >
 		  <div class="header"> 
                         <h1 class="page-header">
                             Dashboard <small>Welcome HR  </small>

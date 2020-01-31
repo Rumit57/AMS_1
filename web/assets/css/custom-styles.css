@@ -622,7 +622,7 @@ line-height: 1.428571429;
  
  @media(min-width:768px) {
      #page-wrapper{
-               margin: 0 0 0 260px;
+               margin-left: 260px;
                padding: 0;
                display: flex;
                 flex-direction: column;
