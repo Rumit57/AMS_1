@@ -233,7 +233,6 @@ textarea {
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
     <script src="js/data-table/colResizable-1.5.source.js"></script>
     <script src="plugins/moment/moment.js"></script>
-    <!--<script src="plugins/common/common.min.js"></script>-->
     <script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
     <script src="plugins/form-pickers-init.js"></script>
   
