@@ -202,7 +202,7 @@
                                     <h6>
                                         Web Developer and Designer
                                     </h6>
-                                    <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                                    <p class="proile-rating">Company : <span>Primavera Systems</span></p>
                             <ul class="nav nav-tabs1" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link1 active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Personal details</a>
@@ -217,18 +217,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="profile-work1">
-<!--                            <p>WORK LINK</p>
-                            <a href="">Website Link</a><br/>
-                            <a href="">Bootsnipp Profile</a><br/>
-                            <a href="">Bootply Profile</a>
-                            <p>SKILLS</p>
-                            <a href="">Web Designer</a><br/>
-                            <a href="">Web Developer</a><br/>
-                            <a href="">WordPress</a><br/>
-                            <a href="">WooCommerce</a><br/>
-                            <a href="">PHP, .Net</a><br/>-->
-                        </div>
+                        
                     </div>
                     <div class="col-md-8">
                         <div class="tab-content profile-tab1">
@@ -329,12 +318,7 @@
                   </div>
                       </div> 
                   </div>
-       
-<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          -->
-                      
+ 
                     
                     
             <div id="page-inner">

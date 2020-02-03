@@ -27,6 +27,8 @@
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+
  
 </head>
 
@@ -135,9 +137,14 @@ textarea {
                                                   </div>
                                                       
                                                       <div class="form-group">
-                                                    <label>Leaving Time</label>
-                                                    <input type="time"  class="form-control">
-                                                  </div>
+                                                    <label >Time</label>
+                                                    <div class="input-group date">          
+                                                        <input class="form-control" id="timepicker" placeholder="Select time" />
+                                                        <span class="input-group-addon">
+                                                          <span class="glyphicon glyphicon-time" ></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
                                                        <div class="form-group">
                                                           <label>Reason</label> 
                                                           <textarea class="form-control" rows="4" cols="50" placeholder="Write a Reason.."></textarea>
@@ -258,21 +265,16 @@ textarea {
          
           <!--Modal End-->
           
-   <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 	 
-   
-    
-	  <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper.js/umd/popper.min.js"> </script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  
-	
-	 <script src="js/data-table/bootstrap-table.js"></script>
+    <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
     <script src="js/data-table/colResizable-1.5.source.js"></script>
-  
+    <script src="plugins/moment/moment.js"></script>
+    <script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <script src="plugins/form-pickers-init.js"></script>
 </body>
 </html>

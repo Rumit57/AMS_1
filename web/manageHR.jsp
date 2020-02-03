@@ -18,27 +18,23 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
-     <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
+    <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
     <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
-    <!-- Morris Chart Styles-->
-    <!-- Morris Chart Styles-->
-    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
-    <!-- Custom Styles-->
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
-        <link href="./plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+    <link href="./plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
 
     
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <style>
         
-        .alert {
-   width:55%;    
-}
-.modal-body {
-    max-height: calc(100vh - 210px);
-    overflow-y: auto;
-}
+            .alert {
+       width:55%;    
+    }
+    .modal-body {
+        max-height: calc(100vh - 210px);
+        overflow-y: auto;
+    }
 
 
     </style>
@@ -284,7 +280,6 @@
     <script src="./plugins/sweetalert/js/sweetalert.init.js"></script> 
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   
      <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/tableExport.js"></script>

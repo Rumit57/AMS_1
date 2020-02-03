@@ -137,15 +137,6 @@
 
                                         </tbody>
                                     </table>
-        <%
-//    }
-//       
-//    }
-//}catch(Exception e)
-//    {
-//        out.print(e);
-//    }
-%>
                                 </div>
                             </div>
                         </div>
@@ -168,8 +159,7 @@
       <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 
- 	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
-	 <script src="js/data-table/bootstrap-table.js"></script>
+    <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
     <script src="js/data-table/colResizable-1.5.source.js"></script>

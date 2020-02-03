@@ -192,8 +192,6 @@ textarea {
                                                           <span class="glyphicon glyphicon-time" ></span>
                                                         </span>
                                                     </div>
-                                               
-                                                  
                                                 </div>
                                                   
              
@@ -219,16 +217,11 @@ textarea {
          
           <!--Modal End-->
           
-   <script src="assets/js/jquery-1.10.2.js"></script>
-     Bootstrap Js 
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!--Bootstrap Js--> 
     <script src="assets/js/bootstrap.min.js"></script>
-	 
-<script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper.js/umd/popper.min.js"> </script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  
-	
-	 <script src="js/data-table/bootstrap-table.js"></script>
+    
+    <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
     <script src="js/data-table/colResizable-1.5.source.js"></script>

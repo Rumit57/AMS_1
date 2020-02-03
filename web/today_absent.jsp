@@ -162,13 +162,7 @@
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 	 
-   
-    
-	  <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper.js/umd/popper.min.js"> </script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  
-	
+ 
 	 <script src="js/data-table/bootstrap-table.js"></script>
     <script src="js/data-table/data-table-active.js"></script>
     <script src="js/data-table/bootstrap-table-resizable.js"></script>
