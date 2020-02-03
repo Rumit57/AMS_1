@@ -228,74 +228,100 @@
                                 
                             
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <label>User Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
+                                            <div class="col-md-2">
+                                                <label>User Id</label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label>:-</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <p id="user_id">Karan123</p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <label>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
+                                            <div class="col-md-2">
+                                                <label>Name</label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label>:-</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <p id="name">Karan Jayswal</p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <label>Email  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
+                                            <div class="col-md-2">
+                                                <label>Email</label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label>:-</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <p id="email">karanjayswal@gmail.com</p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <label>Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
+                                            <div class="col-md-2">
+                                                <label>Phone</label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label>:-</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <p id="phone">123 456 7890</p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <label>Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
+                                            <div class="col-md-2">
+                                                <label>Address</label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label>:-</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <p id="add">1947,Chamunda Nagar,Ghelkhadi,Vijalpor</p>
                                             </div>
                                         </div>
-                                            
-                                             <div class="row">
-                                            <div class="col-md-4">
-                                                <label>Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
+                                 <div class="row">
+                                            <div class="col-md-2">
+                                                <label>Gender</label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label>:-</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <p id="gender">Male</p>
                                             </div>
                                         </div>
-                                            
+                                
                             <div class="row">
-                                            <div class="col-md-4">
-                                                <label>City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
+                                            <div class="col-md-2">
+                                                <label>City</label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label>:-</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <p id="city">Navsari</p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <label>State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:-</label>
+                                            <div class="col-md-2">
+                                                <label>State</label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label>:-</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <p id="state">Gujarat</p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <label>Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:- </label>
+                                            <div class="col-md-2">
+                                                <label>Country</label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label>:-</label>
                                             </div>
                                             <div class="col-md-4">
                                                 <p id="country">India</p>
