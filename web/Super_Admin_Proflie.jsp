@@ -322,11 +322,7 @@
                   </div>
                       </div> 
                   </div>
-       
-<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          -->
+
        <script>
         function edit()
         {
@@ -340,10 +336,8 @@
             document.getElementById("phone").innerHTML = "<input type='text'  class='form-control' name='phone' id='phone' placeholder='enter phone number' value="+phone+" >";
             var address=document.getElementById("add").textContent;
             document.getElementById("add").innerHTML = "<input type='text'  class='form-control' name='address' id='address' placeholder='enter address' value="+address+" >";
-           
-           var gen=document.getElementById("gender").textContent;
+            var gen=document.getElementById("gender").textContent;
             document.getElementById("gender").innerHTML = "<input type='text'  class='form-control' name='gender' id='gender' placeholder='enter address' value="+gen+" >";
-            
             var city=document.getElementById("city").textContent;
             document.getElementById("city").innerHTML = "<input type='text'  class='form-control' name='city' id='city' placeholder='enter city' value="+city+" >";
             var state=document.getElementById("state").textContent;

@@ -90,13 +90,13 @@
                       <div class="row">
                
                                     
-                           <div class="col-md-4 col-sm-12 col-xs-12">
+                          <div class="col-md-4 col-sm-12 col-xs-12"><a href="SA_company.jsp">
 					<div class="board">
                         <div class="panel panel-primary">
 						<div class="number">
 							<h3>
 								</h3><h3>440</h3>
-								<small> Company</small>
+								<small style="text-transform: capitalize;"> Company</small>
 							 
 						</div>
 						<div class="icon">
@@ -104,16 +104,16 @@
 						</div>
 		 
                         </div>
-						</div>
+                                        </div></a>
                     </div>   
                                 
-                           <div class="col-md-4 col-sm-12 col-xs-12">
+                          <div class="col-md-4 col-sm-12 col-xs-12"><a href="SA_admin.jsp">
 					<div class="board">
                         <div class="panel panel-primary">
 						<div class="number">
 							<h3>
 								</h3><h3>440</h3>
-								<small> Admin</small>
+								<small style="text-transform: capitalize;"> Admin</small>
 							 
 						</div>
 						<div class="icon">
@@ -121,7 +121,7 @@
 						</div>
 		 
                         </div>
-						</div>
+                                        </div></a>
                     </div>   
                    
                            <div class="col-md-4 col-sm-12 col-xs-12">

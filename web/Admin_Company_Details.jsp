@@ -197,12 +197,12 @@
                
               </div><!--/tab-pane-->
           </div><!--/tab-content-->
-
-        </div><!--/col-9-->
+    </div>
+        </div>
+        </div><!--/col-12-->
     </div><!--/row-->
 </div>
-                                       </div>
-       </div>               
+             
         
             <div id="page-inner">
 
@@ -217,7 +217,6 @@
         <!-- /. PAGE WRAPPER  -->
     </div>
     <!-- /. WRAPPER  -->
-    <!-- JS Scripts-->
     <!-- jQuery Js -->
     <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
