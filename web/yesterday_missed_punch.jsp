@@ -138,7 +138,7 @@ textarea {
                             <td>Rumit</td>
                             <td>shah.rumit57@gmail.com</td>
                             <td>8848438823</td>
-                            <td><button style="width: 80%" class="btn btn-success " data-toggle="modal" data-target="#myModal" href="#"><u>Fix</u></button></td>
+                            <td><button style="width: 80%;text-decoration: none" class="btn btn-success " data-toggle="modal" data-target="#myModal" href="#"><u>Fix</u></button></td>
                             </tr>
                        <%
                             count1++;

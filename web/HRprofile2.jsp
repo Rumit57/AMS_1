@@ -183,11 +183,11 @@
 		<div id="page-wrapper">
 		  <div class="header"> 
                       <br>
-						<ol class="breadcrumb">
-                                                    <h1>
-					  <li class="active">HR Profile</li>
-                                          </h1>
-					</ol> 
+                    <ol class="breadcrumb">
+                            <h1>
+                  <li class="active">HR Profile</li>
+                  </h1>
+                </ol> 
 										
 		
                  
