@@ -38,55 +38,46 @@
         <%
             Document document = new Document(PageSize.A4, 50, 50, 50, 50);
 
-		// Listing 2. Creation of PdfWriter object
-		PdfWriter writer = PdfWriter.getInstance(document,
-				new FileOutputStream("/home/rumit/AMS/AMS_1/web/pdf/9.pdf"));
-		
-		document.open();
+            // Listing 2. Creation of PdfWriter object
+            PdfWriter writer = PdfWriter.getInstance(document,
+                    new FileOutputStream("/home/rumit/AMS/AMS_1/web/pdf/9.pdf"));
 
-		// Listing 3. Creation of paragraph object
-		
+            document.open();
 
-		
-		// Listing 4. Creation of chapter object
-		Paragraph title11 = new Paragraph("reports",
-				FontFactory.getFont(FontFactory.HELVETICA, 16, Font.BOLD,
-						new CMYKColor(0, 255, 255, 17)));
-		Chapter chapter1 = new Chapter(title11, 1);
-		chapter1.setNumberDepth(0);
+            // Listing 3. Creation of chapter object
+            Paragraph title11 = new Paragraph("reports",
+                    FontFactory.getFont(FontFactory.HELVETICA, 16, Font.BOLD,
+                            new CMYKColor(0, 255, 255, 17)));
+            Chapter chapter1 = new Chapter(title11, 1);
+            chapter1.setNumberDepth(0);
 
-		// Listing 5. Creation of section object
-		
-		Section section1 = chapter1.addSection(title11);
-		
-		// Listing 6. Creation of table object
-		PdfPTable t = new PdfPTable(4);
-		
-		t.setSpacingBefore(25);
-		t.setSpacingAfter(25);
-		PdfPCell c1 = new PdfPCell(new Phrase("Name"));
-		t.addCell(c1);
-		PdfPCell c2 = new PdfPCell(new Phrase("Email"));
-		t.addCell(c2);
-		PdfPCell c3 = new PdfPCell(new Phrase("Punchin"));
-		t.addCell(c3);
-                PdfPCell c4 = new PdfPCell(new Phrase("Punchout"));
-		t.addCell(c4);
-                 
-              
-                for(int i=0;i<7;i++){
-                
-		t.addCell("1.1");
-		t.addCell("shah.rumit57@gmail.com");
-		t.addCell("1.3");
+            // Listing 4. Creation of section object
+            Section section1 = chapter1.addSection(title11);
+
+            // Listing 5. Creation of table object
+            PdfPTable t = new PdfPTable(4);
+
+            t.setSpacingBefore(25);
+            t.setSpacingAfter(25);
+            PdfPCell c1 = new PdfPCell(new Phrase("Name"));
+            t.addCell(c1);
+            PdfPCell c2 = new PdfPCell(new Phrase("Email"));
+            t.addCell(c2);
+            PdfPCell c3 = new PdfPCell(new Phrase("Punchin"));
+            t.addCell(c3);
+            PdfPCell c4 = new PdfPCell(new Phrase("Punchout"));
+            t.addCell(c4);
+
+            for (int i = 0; i < 7; i++) {
+                t.addCell("1.1");
+                t.addCell("shah.rumit57@gmail.com");
+                t.addCell("1.3");
                 t.addCell("1.4");
-                
-                        
-                }
-		section1.add(t);
+            }
+            section1.add(t);
 
-		document.add(chapter1);
-		document.close();
+            document.add(chapter1);
+            document.close();
         %>
     </body>
 </html>
